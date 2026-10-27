@@ -1,0 +1,123 @@
+/* Passaggio website: layout only (G4, Oct 28).
+   Structure, centring and spacing to match the app: numbered rows, disclosure sections,
+   one centred column. No colours, textures, icons or button styling here; those live in
+   site.css and belong to Codex.
+
+   State hooks for Codex to style (structure only here):
+     .row--active    the row in use now (an open disclosure, the next step)
+     .row--selected  the highlighted or recommended row
+     .row--locked    not open yet (a level you haven't reached)
+     .row--done      finished (a level you've passed)
+*/
+
+:root {
+  /* The app's spacing scale and content width (src/theme/spacing.ts). */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --column: 560px;
+  --row-min: 64px;
+}
+
+/* One centred column */
+main .container { text-align: center; }
+.section-head,
+main .lede { margin-left: auto; margin-right: auto; }
+.section-head { margin-bottom: var(--space-4); }
+.btn-row { justify-content: center; }
+.column { max-width: var(--column); margin-left: auto; margin-right: auto; }
+
+section { padding: var(--space-6) 0; }
+.hero { padding: var(--space-6) 0 var(--space-4); }
+#hero { padding-top: var(--space-3); }
+
+/* Short bullet list under the hero line */
+.hero-points {
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 1.1em;
+  text-align: left;
+}
+.hero-points li { margin-bottom: var(--space-1); }
+
+/* Numbered rows */
+.rows {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: var(--column);
+  display: grid;
+  gap: var(--space-2);
+  text-align: left;
+}
+.row {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: var(--space-2);
+  align-items: center;
+  min-height: var(--row-min);
+  padding: var(--space-2) var(--space-3);
+}
+.row__num {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  font-variant-numeric: tabular-nums;
+}
+.row .row__title { margin: 0 0 var(--space-1); padding: 0; border: 0; }
+.row__body > :last-child { margin-bottom: 0; }
+.row__body ul { margin: 0; padding-left: 1.1em; }
+.row__body li { margin-bottom: var(--space-1); }
+.row__tag { display: block; margin-bottom: 2px; }
+
+.rows + .lede { margin-top: var(--space-3); }
+
+/* State hooks: structure only */
+.row--locked { cursor: not-allowed; }
+.row--locked .row__body > p { opacity: 0.7; }
+
+/* Disclosure sections */
+.disclosures {
+  margin: 0 auto;
+  max-width: var(--column);
+  display: grid;
+  gap: var(--space-2);
+  text-align: left;
+}
+.disclosure { margin: 0; padding: 0; }
+.disclosure > summary {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  min-height: var(--row-min);
+  text-align: left;
+  column-gap: var(--space-2);
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+}
+.disclosure > summary h2,
+.disclosure > summary h3 { margin: 0; padding: 0; border: 0; font-size: 1.2rem; }
+.disclosure__body {
+  padding: 0 var(--space-3) var(--space-2) calc(var(--space-3) + 40px + var(--space-2));
+}
+.disclosure__body ul { margin: 0; padding-left: 1.1em; }
+.disclosure__body li { margin-bottom: var(--space-1); }
+.disclosure__body p { margin: 0 0 var(--space-2); }
+
+/* Footer centred under the column */
+.site-footer .container { justify-items: center; text-align: center; }
+.site-footer nav { justify-content: center; }
+
+@media (min-width: 700px) {
+  .site-footer .container { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  section { padding: var(--space-4) 0; }
+  .hero { padding: var(--space-4) 0 var(--space-3); }
+  .row,
+  .disclosure > summary { padding: var(--space-2); }
+  .disclosure__body { padding: 0 var(--space-2) var(--space-2); }
+}
