@@ -16,6 +16,7 @@
 <link rel="manifest" href="/assets/site.webmanifest">
 <link rel="preload" href="/assets/fonts/CrimsonPro-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="/assets/site.css?v=g4-2">
+<link rel="stylesheet" href="/assets/layout.css?v=g4-rows1">
 </head>
 <body>
 <header class="site-header">
@@ -37,13 +38,17 @@
 <section class="hero">
   <div class="container">
     <h1>Download</h1>
-    <p class="lede">Passaggio installs from a file (an APK) on GitHub, not Google Play. Installing over an older version keeps your progress.</p>
+    <p class="lede">Passaggio installs from a file (an APK) on GitHub, not Google Play.</p>
+    <ul class="hero-points">
+      <li>Free to install.</li>
+      <li>Installing over an older version keeps your progress.</li>
+    </ul>
   </div>
 </section>
 
 <section>
   <div class="container download-card">
-    <div class="tile gold">
+    <div class="tile row--selected">
       <span class="num">Latest version</span>
       <h3>Passaggio for Android</h3>
       <p id="apk-meta" class="meta">Finding the latest version…</p>
@@ -55,11 +60,29 @@
     </div>
     <div>
       <h3>How to install</h3>
-      <div class="steps">
-        <div class="step"><div class="n">1</div><div><p>Tap the download button on your phone.</p></div></div>
-        <div class="step"><div class="n">2</div><div><p>Open the file. If asked, allow installs from unknown apps, then tap <strong>Install</strong>.</p></div></div>
-        <div class="step"><div class="n">3</div><div><p>Put on headphones, open Passaggio and follow the voice setup. Allow the microphone; it's the only permission the app asks for.</p></div></div>
-      </div>
+      <ol class="rows">
+          <li class="row tile">
+            <span class="row__num">01</span>
+            <div class="row__body">
+              <h4 class="row__title">Download</h4>
+              <p>Tap the download button on your phone.</p>
+            </div>
+          </li>
+          <li class="row tile">
+            <span class="row__num">02</span>
+            <div class="row__body">
+              <h4 class="row__title">Install</h4>
+              <p>Open the file. If asked, allow installs from unknown apps, then tap <strong>Install</strong>.</p>
+            </div>
+          </li>
+          <li class="row tile">
+            <span class="row__num">03</span>
+            <div class="row__body">
+              <h4 class="row__title">Set up</h4>
+              <p>Put on headphones, open Passaggio and follow the voice setup. Allow the microphone; it's the only permission the app asks for.</p>
+            </div>
+          </li>
+      </ol>
       <p class="note">Play Protect may warn about an unknown developer, because the app isn't on Google Play. Only install a file you downloaded from this page or from the GitHub link above. If it came from there, tap <strong>Install anyway</strong>.</p>
     </div>
   </div>
@@ -91,7 +114,7 @@
     </nav>
   </div>
 </footer>
-<script src="/assets/site.js?v=noir2" defer></script>
+<script src="/assets/site.js?v=noir3" defer></script>
 <script src="/assets/demos.js?v=2" defer></script>
 </body>
 </html>
