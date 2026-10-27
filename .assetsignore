@@ -1,0 +1,10 @@
+.git
+.github
+pages
+build.py
+README.md
+vercel.json
+wrangler.jsonc
+.assetsignore
+.gitignore
+node_modules
