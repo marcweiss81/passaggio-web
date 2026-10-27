@@ -82,33 +82,26 @@ em { color: var(--gold); font-style: italic; }
 
 /* Header */
 .site-header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 50;
-  backdrop-filter: blur(10px);
   background: rgba(9, 9, 8, 0.72);
   border-bottom: 1px solid rgba(161, 136, 94, 0.25);
 }
+/* Logo at the very top, the menu centred under it (Marc, Oct 27). */
 .site-header .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  min-height: 64px;
-  gap: 16px;
+  gap: 4px;
+  padding-top: 8px;
+  padding-bottom: 12px;
 }
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: var(--font-brand);
-  font-weight: 600;
-  font-size: 1.35rem;
-  color: var(--bone);
-  letter-spacing: -0.01em;
-}
+.brand { display: block; width: min(100%, 300px); }
+.brand img { width: 100%; height: auto; }
+.site-header.home .brand { width: min(100%, 1040px); margin-top: -24px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .brand:hover { color: var(--bone); }
-.nav { display: flex; align-items: center; gap: 4px; }
+.nav { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px; }
 .nav a {
   padding: 8px 12px;
   border-radius: var(--radius-sm);
@@ -158,8 +151,7 @@ em { color: var(--gold); font-style: italic; }
 
 /* Hero */
 .hero { padding: 80px 0 60px; position: relative; overflow: hidden; }
-.hero-logo { display: block; width: min(100%, 1040px); height: auto; margin: -40px auto 8px; }
-@media (max-width: 760px) { .hero-logo { width: calc(100% + 2 * var(--gutter)); max-width: none; margin: -24px calc(-1 * var(--gutter)) 4px; } }
+#hero { padding-top: 24px; }
 .hero .container { position: relative; }
 .hero p.lede { font-size: 1.2rem; }
 
@@ -317,9 +309,11 @@ details p { color: var(--text-2); margin: 0 0 14px; }
     border-bottom: 1px solid var(--divider);
   }
   .nav.open { display: flex; }
-  .nav a { padding: 12px 10px; font-size: 1.05rem; }
+  .nav a { padding: 12px 10px; font-size: 1.05rem; text-align: center; }
   .nav .cta { margin: 8px 0 0; justify-content: center; display: flex; }
   .hero { padding: 56px 0 40px; }
+  #hero { padding-top: 16px; }
+  .site-header.home .brand { width: calc(100% + 2 * var(--gutter)); max-width: none; margin: -12px calc(-1 * var(--gutter)) 0; }
   section { padding: 48px 0; }
   .lane { height: 120px; }
 }
@@ -403,3 +397,14 @@ details p { color: var(--text-2); margin: 0 0 14px; }
 .demo-weak.built .built-btn { opacity: 1; border-color: var(--gold); color: var(--gold); box-shadow: 0 0 0 4px rgba(245, 204, 88, 0.12), 0 0 24px rgba(245, 204, 88, 0.2); }
 .demo-weak.built .status .pulse { animation: none; background: var(--gold); opacity: 1; }
 @media (prefers-reduced-motion: reduce) { .demo-weak .status .pulse, .demo-card .mouth { animation: none; } }
+
+/* Centred layout (Marc, Oct 27): hero, headings, text column and buttons. */
+main h1, main h2 { text-align: center; }
+.hero .container, .section-head { text-align: center; }
+.section-head { margin-left: auto; margin-right: auto; }
+.lede { margin-left: auto; margin-right: auto; text-align: center; }
+.btn-row { justify-content: center; }
+.feature-block, .steps, .prose { max-width: 46rem; margin-left: auto; margin-right: auto; }
+.site-footer .container { text-align: center; justify-items: center; }
+.site-footer nav { justify-content: center; }
+@media (min-width: 700px) { .site-footer .container { grid-template-columns: 1fr; } }
