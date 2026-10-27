@@ -1,5 +1,5 @@
 /* Passaggio website — the two "see it in action" animations.
-   1. lessonDemo: scrolling note bars with a live pitch line; a flat phrase interrupts the lesson
+   1. lessonDemo: scrolling note bars with a live pitch line; a strained phrase interrupts the lesson
       with a correction card, then singing resumes on pitch.
    2. weakDemo: the weak-areas analysis building a lesson from the singer's own tendencies.
    Both loop, pause when off-screen, and freeze for prefers-reduced-motion. */
@@ -19,7 +19,7 @@
     /* The phrase: start time (s), length (s), row (0 = top), syllable, and whether it is sung flat. */
     var NOTES = [
       [0.4, 0.9, 5, "ah"], [1.5, 0.7, 4, "ee"], [2.4, 1.1, 3, "oo"], [3.7, 0.8, 4, "ah"],
-      [4.7, 1.2, 2, "ee", "flat"], [6.1, 1.0, 2, "ah", "flat"],
+      [4.7, 1.2, 2, "ee", "strain"], [6.1, 1.0, 2, "ah", "strain"],
       [7.4, 0.8, 3, "oo"], [8.4, 0.9, 2, "ee"], [9.5, 1.3, 1, "ah"], [11.0, 0.8, 2, "oo"], [12.0, 1.4, 3, "ah"]
     ];
     var FLAT_AT = 7.1;      /* the lesson stops here and the card appears */
@@ -56,7 +56,7 @@
         var n = NOTES[i];
         if (lessonT >= n[0] && lessonT <= n[0] + n[1]) {
           var wob = Math.sin(lessonT * 11) * 1.6;
-          if (n[4] === "flat") { y = rowY(n[2]) + barH() * 0.95 + wob; col = ROSE; }
+          if (n[4] === "strain") { y = rowY(n[2]) + 3 + Math.sin(lessonT * 37) * 5; col = ROSE; }
           else { y = rowY(n[2]) + wob; col = GOLD; }
         }
       }
@@ -81,7 +81,7 @@
       for (var i = 0; i < NOTES.length; i++) {
         var n = NOTES[i], x0 = px + (n[0] - lessonT) * PX_PER_S, w = n[1] * PX_PER_S, y = rowY(n[2]) - bh / 2;
         if (x0 > W || x0 + w < 0) continue;
-        var sung = lessonT > n[0], done = lessonT > n[0] + n[1], flat = n[4] === "flat";
+        var sung = lessonT > n[0], done = lessonT > n[0] + n[1], flat = n[4] === "strain";
         var lit = sung && !done && !flat;
         ctx.beginPath(); roundRect(x0, y, w, bh, bh / 2);
         if (lit) { ctx.shadowColor = GOLD; ctx.shadowBlur = 18; ctx.fillStyle = "rgba(245,204,88,0.42)"; }
