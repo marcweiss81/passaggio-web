@@ -33,11 +33,12 @@ LAYOUT = """<!doctype html>
 <meta property="og:description" content="{description}">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/assets/logo-lockup.png">
-<link rel="icon" href="/assets/favicon.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=noir6">
+<link rel="icon" href="/assets/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/assets/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/assets/site.webmanifest">
+<link rel="preload" href="/assets/fonts/CrimsonPro-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=g4-2">
 </head>
 <body>
 <header class="site-header{header_class}">
