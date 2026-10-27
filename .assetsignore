@@ -8,3 +8,4 @@ wrangler.jsonc
 .assetsignore
 .gitignore
 node_modules
+.wrangler
