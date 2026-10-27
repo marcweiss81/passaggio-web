@@ -26,32 +26,32 @@ description: How a Passaggio session runs, from voice setup to results, and how 
   <div class="container">
     <div class="section-head">
       <span class="kicker">Under the hood</span>
-      <h2>An engine built to run on the phone.</h2>
+      <h2>Why it feels instant, and why it feels fair.</h2>
     </div>
     <div class="grid">
       <div class="tile">
-        <h3>Low-latency capture</h3>
-        <p>Native audio capture at 48 kHz into a lock-free buffer, analysed on its own thread with 10 ms hops. Output latency is measured per headphone route so the bars line up with what you hear.</p>
+        <h3>It hears you the moment you sing</h3>
+        <p>Your voice is checked a hundred times a second, so the line on screen moves with you, not a beat behind. The app also measures your headphones' own delay, so the bars line up with what you hear.</p>
       </div>
       <div class="tile">
-        <h3>Neural pitch tracking</h3>
-        <p>A CREPE-class neural tracker fused with probabilistic YIN tracking, with dedicated modes for lip trills and hums so semi-occluded sounds don't slip to the wrong octave.</p>
+        <h3>It finds the right note</h3>
+        <p>Two different pitch-finders work together and agree on the note before it's shown. Lip trills and hums get their own listening mode, so a buzz or a hum isn't read as the wrong octave.</p>
       </div>
       <div class="tile">
-        <h3>Tone against your baseline</h3>
+        <h3>It compares you with you</h3>
         <p>Breathy, pressed, twang, high larynx, nasal, strain, fry, belt and distortion are read against your own recorded vowels, moved along your pitch trend — never a population norm.</p>
       </div>
       <div class="tile">
-        <h3>Register and mix</h3>
-        <p>Chest-to-head balance from spectral cues plus your measured bridge gives a connected-mix reading, so a well-joined upper note reads as "connected", not "chest".</p>
+        <h3>Chest voice, head voice, and the join</h3>
+        <p>Setup measured where your voice changes gear, so the app can tell a high note you've joined smoothly from one you've dragged up in chest voice, and it credits the smooth one.</p>
       </div>
       <div class="tile">
-        <h3>60 fps lane</h3>
-        <p>Skia and Reanimated on the UI thread, driven by the audio clock. The flames are a procedural shader, not sprites.</p>
+        <h3>Smooth on screen</h3>
+        <p>The bars, the line and the flames run at your phone's full frame rate and are locked to the sound, so nothing stutters or drifts while you sing.</p>
       </div>
       <div class="tile gold">
-        <h3>Local, encrypted</h3>
-        <p>Results live in an encrypted SQLite database with the key in the Android keystore. The release build has no internet permission at all.</p>
+        <h3>Nothing leaves your phone</h3>
+        <p>Every recording and result stays on your phone, locked with a key only your phone holds. The app doesn't even ask for internet access, so there is nothing to upload.</p>
       </div>
     </div>
   </div>
