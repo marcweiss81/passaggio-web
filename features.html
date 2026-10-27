@@ -16,6 +16,7 @@
 <link rel="manifest" href="/assets/site.webmanifest">
 <link rel="preload" href="/assets/fonts/CrimsonPro-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="/assets/site.css?v=g4-2">
+<link rel="stylesheet" href="/assets/layout.css?v=g4-rows1">
 </head>
 <body>
 <header class="site-header">
@@ -37,98 +38,109 @@
 <section class="hero">
   <div class="container">
     <h1>Features</h1>
-    <p class="lede">Everything here is in the current Android app.</p>
+    <p class="lede">Everything here is in the current Android app. Open a section to see the details.</p>
   </div>
 </section>
 
-<div class="container">
-
-<section class="feature-block" id="feel-your-technique">
-  <h2>Feel your technique</h2>
-  <ul>
-    <li><strong>Six live guides</strong> — soft palate, throat space, free or pressed sound, breath, vowel shape and the bridge. Each turns green when it's right.</li>
-    <li><strong>72-second guided practice</strong> — six steps, each with a vowel to sing and one thing to try.</li>
-    <li><strong>Remember it</strong> — save the sound when it's right. Later lessons remind you of it.</li>
-    <li>First on the Technique tab. The guides compare sounds; they don't measure your throat.</li>
-  </ul>
+<section>
+  <div class="container">
+    <div class="disclosures">
+      <details class="disclosure tile row--active" id="feel-your-technique" open>
+        <summary><span class="row__num">01</span><h2>Feel your technique</h2></summary>
+        <div class="disclosure__body">
+          <ul>
+            <li><strong>Six live guides</strong> — soft palate, throat space, free or pressed sound, breath, vowel shape and the bridge. Each turns green when it's right.</li>
+            <li><strong>72-second guided practice</strong> — six steps, each with a vowel to sing and one thing to try.</li>
+            <li><strong>Remember it</strong> — save the sound when it's right. Later lessons remind you of it.</li>
+            <li>First on the Technique tab. The guides compare sounds; they don't measure your throat.</li>
+          </ul>
+        </div>
+      </details>
+      <details class="disclosure tile" id="your-voice">
+        <summary><span class="row__num">02</span><h2>Your voice</h2></summary>
+        <div class="disclosure__body">
+          <ul>
+            <li><strong>Voice setup</strong> — a short guided session finds your speaking pitch, range, voice type and bridge, and records your own vowels. Your tone is then judged against you.</li>
+            <li><strong>Find your bridge</strong> — your voice map: your range on a keyboard, your most comfortable notes and your bridge. A live figure shows whether you're singing in chest or head voice.</li>
+            <li><strong>Range growth</strong> — tracked from your first setup.</li>
+            <li><strong>Six styles</strong> — classical, musical theatre, pop, rock, jazz and folk. Corrections follow your style.</li>
+          </ul>
+        </div>
+      </details>
+      <details class="disclosure tile" id="while-you-sing">
+        <summary><span class="row__num">03</span><h2>While you sing</h2></summary>
+        <div class="disclosure__body">
+          <ul>
+            <li><strong>Note lane</strong> — note bars scroll past and your voice draws a line through them. Gold means on pitch.</li>
+            <li><strong>Guide piano</strong> — plays each note just before you sing it.</li>
+            <li><strong>Technique, not just notes</strong> — it hears breath, strain, pressing, nasal tone, twang, belt, vibrato and whether you're in chest or head voice, judged against your own voice.</li>
+            <li><strong>Tone word</strong> — one word for how you sound: clear, airy, tight, nasal or creaky.</li>
+            <li><strong>Corrections</strong> — when a habit comes back, a card shows the fix. Tap it to hear the difference.</li>
+            <li><strong>Streaks</strong> — sing notes in tune in a row and the bars catch fire.</li>
+            <li><strong>Scoring</strong> — 80% opens the next level. Strain caps the score at 79, so you can't pass by pushing.</li>
+            <li><strong>Glossary</strong> — tap any singing term for a plain explanation.</li>
+            <li><strong>Results</strong> — round by round, with what to work on next.</li>
+          </ul>
+        </div>
+      </details>
+      <details class="disclosure tile" id="lessons">
+        <summary><span class="row__num">04</span><h2>Lessons</h2></summary>
+        <div class="disclosure__body">
+          <ul>
+            <li><strong>Ai Warm-up: finding your voice's path</strong> — after each lesson it works out why notes went wrong (strain, the bridge, breath or a vowel), builds your next warm-up to fix it, then checks again. Always the first warm-up option.</li>
+            <li><strong>Passaggio Ai Lessons</strong> — lessons built from the notes you actually sing.</li>
+            <li><strong>Isolated weak area targeting</strong> — after about ten lessons, any note, jump, vowel, bridge crossing or habit you keep missing gets its own lesson. It retires after five clean runs.</li>
+            <li><strong>Twelve skill tracks, ten levels each</strong> — from warm-up glides to mix voice. <a href="/lessons.html">See all tracks →</a></li>
+            <li><strong>Today's plan</strong> — one lesson a day, picked from your progress.</li>
+            <li><strong>Warm-ups</strong> — Free the voice, Mix and Range, with a check that you're ready to sing. Also breath exercises and a Quick warm up.</li>
+            <li><strong>Lessons start by themselves</strong> once you choose one. Favourites keep the ones you like close.</li>
+          </ul>
+        </div>
+      </details>
+      <details class="disclosure tile" id="songs">
+        <summary><span class="row__num">05</span><h2>Your songs</h2></summary>
+        <div class="disclosure__body">
+          <ul>
+            <li><strong>Import from your phone</strong> — the vocals are separated, the melody found and the lyrics synced, all on the phone.</li>
+            <li><strong>Lyrics in the note bars</strong> — each word sits in its bar, with a karaoke-style teleprompter.</li>
+            <li><strong>Chords</strong> — the current and next chord, worked out from the song.</li>
+            <li><strong>Song ideas</strong> — songs that suit your voice type, by genre. Tap "Not for me" to see fewer like it.</li>
+          </ul>
+        </div>
+      </details>
+      <details class="disclosure tile" id="trainer">
+        <summary><span class="row__num">06</span><h2>Trainer</h2></summary>
+        <div class="disclosure__body">
+          <ul>
+            <li><strong>Two voices</strong> — a female and a male trainer. Matched to your voice; change it in Settings.</li>
+            <li><strong>Real sung examples</strong> — a real singer sings the first note in your key.</li>
+            <li><strong>Hear the difference</strong> — for common mistakes you hear "Not like this", then "Like this", then the advice.</li>
+            <li><strong>Voice commands</strong> — say "next", "again", "start" or "skip".</li>
+          </ul>
+        </div>
+      </details>
+      <details class="disclosure tile" id="setup">
+        <summary><span class="row__num">07</span><h2>Setup</h2></summary>
+        <div class="disclosure__body">
+          <ul>
+            <li><strong>Headphones</strong> — wired or Bluetooth. A quick check measures their delay so the bars match what you hear.</li>
+            <li><strong>Volume meter</strong> — shows if you're singing at a good level.</li>
+            <li><strong>Save my singing</strong> — optional. Recordings stay on your phone.</li>
+          </ul>
+        </div>
+      </details>
+      <details class="disclosure tile" id="look">
+        <summary><span class="row__num">08</span><h2>Appearance</h2></summary>
+        <div class="disclosure__body">
+          <ul>
+            <li>Choose colour schemes, fonts, button styles and where controls sit.</li>
+            <li>Line skins for your voice line unlock over your first 20 lessons.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
 </section>
-
-<section class="feature-block" id="your-voice">
-  <h2>Your voice</h2>
-  <ul>
-    <li><strong>Voice setup</strong> — a short guided session finds your speaking pitch, range, voice type and bridge, and records your own vowels. Your tone is then judged against you.</li>
-    <li><strong>Find your bridge</strong> — your voice map: your range on a keyboard, your most comfortable notes and your bridge. A live figure shows whether you're singing in chest or head voice.</li>
-    <li><strong>Range growth</strong> — tracked from your first setup.</li>
-    <li><strong>Six styles</strong> — classical, musical theatre, pop, rock, jazz and folk. Corrections follow your style.</li>
-  </ul>
-</section>
-
-<section class="feature-block" id="while-you-sing">
-  <h2>While you sing</h2>
-  <ul>
-    <li><strong>Note lane</strong> — note bars scroll past and your voice draws a line through them. Gold means on pitch.</li>
-    <li><strong>Guide piano</strong> — plays each note just before you sing it.</li>
-    <li><strong>Technique, not just notes</strong> — it hears breath, strain, pressing, nasal tone, twang, belt, vibrato and whether you're in chest or head voice, judged against your own voice.</li>
-    <li><strong>Tone word</strong> — one word for how you sound: clear, airy, tight, nasal or creaky.</li>
-    <li><strong>Corrections</strong> — when a habit comes back, a card shows the fix. Tap it to hear the difference.</li>
-    <li><strong>Streaks</strong> — sing notes in tune in a row and the bars catch fire.</li>
-    <li><strong>Scoring</strong> — 80% opens the next level. Strain caps the score at 79, so you can't pass by pushing.</li>
-    <li><strong>Glossary</strong> — tap any singing term for a plain explanation.</li>
-    <li><strong>Results</strong> — round by round, with what to work on next.</li>
-  </ul>
-</section>
-
-<section class="feature-block" id="lessons">
-  <h2>Lessons</h2>
-  <ul>
-    <li><strong>Ai Warm-up : finding your voice's path</strong> — after each lesson it works out why notes went wrong (strain, the bridge, breath or a vowel), builds your next warm-up to fix it, then checks again. Always the first warm-up option.</li>
-    <li><strong>Passaggio Ai Lessons</strong> — lessons built from the notes you actually sing.</li>
-    <li><strong>Isolated weak area targeting</strong> — after about ten lessons, any note, jump, vowel, bridge crossing or habit you keep missing gets its own lesson. It retires after five clean runs.</li>
-    <li><strong>Twelve skill tracks, ten levels each</strong> — from warm-up glides to mix voice. <a href="/lessons.html">See all tracks →</a></li>
-    <li><strong>Today's plan</strong> — one lesson a day, picked from your progress.</li>
-    <li><strong>Warm-ups</strong> — Free the voice, Mix and Range, with a check that you're ready to sing. Also breath exercises and a Quick warm up.</li>
-    <li><strong>Lessons start by themselves</strong> once you choose one. Favourites keep the ones you like close.</li>
-  </ul>
-</section>
-
-<section class="feature-block" id="songs">
-  <h2>Your songs</h2>
-  <ul>
-    <li><strong>Import from your phone</strong> — the vocals are separated, the melody found and the lyrics synced, all on the phone.</li>
-    <li><strong>Lyrics in the note bars</strong> — each word sits in its bar, with a karaoke-style teleprompter.</li>
-    <li><strong>Chords</strong> — the current and next chord, worked out from the song.</li>
-    <li><strong>Song ideas</strong> — songs that suit your voice type, by genre. Tap "Not for me" to see fewer like it.</li>
-  </ul>
-</section>
-
-<section class="feature-block" id="trainer">
-  <h2>Trainer</h2>
-  <ul>
-    <li><strong>Two voices</strong> — a female and a male trainer. Matched to your voice; change it in Settings.</li>
-    <li><strong>Real sung examples</strong> — a real singer sings the first note in your key.</li>
-    <li><strong>Hear the difference</strong> — for common mistakes you hear "Not like this", then "Like this", then the advice.</li>
-    <li><strong>Voice commands</strong> — say "next", "again", "start" or "skip".</li>
-  </ul>
-</section>
-
-<section class="feature-block" id="setup">
-  <h2>Setup</h2>
-  <ul>
-    <li><strong>Headphones</strong> — wired or Bluetooth. A quick check measures their delay so the bars match what you hear.</li>
-    <li><strong>Volume meter</strong> — shows if you're singing at a good level.</li>
-    <li><strong>Save my singing</strong> — optional. Recordings stay on your phone.</li>
-  </ul>
-</section>
-
-<section class="feature-block" id="look">
-  <h2>Appearance</h2>
-  <ul>
-    <li>Choose colour schemes, fonts, button styles and where controls sit.</li>
-    <li>Line skins for your voice line unlock over your first 20 lessons.</li>
-  </ul>
-</section>
-
-</div>
 
 <section class="alt">
   <div class="container">
@@ -160,7 +172,7 @@
     </nav>
   </div>
 </footer>
-<script src="/assets/site.js?v=noir2" defer></script>
+<script src="/assets/site.js?v=noir3" defer></script>
 <script src="/assets/demos.js?v=2" defer></script>
 </body>
 </html>
