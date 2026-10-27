@@ -10,7 +10,7 @@ ROOT = Path(__file__).parent
 PAGES = ROOT / "pages"
 
 SITE_NAME = "Passaggio"
-TAGLINE = "your voice's path"
+TAGLINE = "your voice’s path"
 RELEASES = "https://github.com/marcweiss81/passaggio-releases/releases/latest"
 
 NAV = [
@@ -37,16 +37,16 @@ LAYOUT = """<!doctype html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=noir5">
+<link rel="stylesheet" href="/assets/site.css?v=noir6">
 </head>
 <body>
-<header class="site-header">
+<header class="site-header{header_class}">
   <div class="container">
-    <a class="brand" href="/"><span class="sr-only">Passaggio home</span></a>
+    <a class="brand" href="/"><img src="/assets/logo-lockup.png" alt="Passaggio home" width="2389" height="794"></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="nav" id="site-nav" aria-label="Main">
 {nav}
-      <a class="cta" href="/download.html">Android app</a>
+      <a class="cta" href="/download.html">Download</a>
     </nav>
   </div>
 </header>
@@ -59,7 +59,7 @@ LAYOUT = """<!doctype html>
   <div class="container">
     <div>
       <div class="credit">passaggio · {tagline}</div>
-      <div>Vocal practice, with purpose. © <span data-year>2026</span> Passaggio. Design: Marc Weiss design.</div>
+      <div>An AI singing teacher for Android. © <span data-year>2026</span> Passaggio. Design: Marc Weiss design.</div>
     </div>
     <nav aria-label="Footer">
       <a href="/features.html">Features</a>
@@ -68,7 +68,7 @@ LAYOUT = """<!doctype html>
       <a href="/download.html">Download</a>
       <a href="/faq.html">FAQ</a>
       <a href="/privacy.html">Privacy</a>
-      <a href="{releases}" rel="noopener">Releases on GitHub</a>
+      <a href="{releases}" rel="noopener">GitHub releases</a>
     </nav>
   </div>
 </footer>
@@ -106,6 +106,7 @@ def build() -> None:
             body=body,
             tagline=TAGLINE,
             releases=RELEASES,
+            header_class=" home" if page.name == "index.html" else "",
         )
         (ROOT / page.name).write_text(html, encoding="utf-8")
         print("wrote", page.name)
