@@ -37,12 +37,12 @@ LAYOUT = """<!doctype html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=noir5">
+<link rel="stylesheet" href="/assets/site.css?v=noir6">
 </head>
 <body>
-<header class="site-header">
+<header class="site-header{header_class}">
   <div class="container">
-    <a class="brand" href="/"><span class="sr-only">Passaggio home</span></a>
+    <a class="brand" href="/"><img src="/assets/logo-lockup.png" alt="Passaggio home" width="2389" height="794"></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="nav" id="site-nav" aria-label="Main">
 {nav}
@@ -106,6 +106,7 @@ def build() -> None:
             body=body,
             tagline=TAGLINE,
             releases=RELEASES,
+            header_class=" home" if page.name == "index.html" else "",
         )
         (ROOT / page.name).write_text(html, encoding="utf-8")
         print("wrote", page.name)
