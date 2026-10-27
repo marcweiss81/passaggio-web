@@ -1,16 +1,17 @@
-/* Passaggio website — Velvet & Brass palette carried over from the app */
+/* Passaggio website — Noir palette, the app's default (src/theme/colors.ts + schemes.ts "noir") */
 :root {
-  --bg: #090908;
-  --navy: #0a1236;
-  --navy-deep: #070d25;
-  --navy-sheet: #0d1e53;
-  --glass: rgba(13, 30, 83, 0.55);
-  --glass-pressed: rgba(15, 39, 113, 0.7);
+  --bg: #040404;
+  --black: #060606;
+  --black-deep: #040404;
+  --black-sheet: #0d0d0d;
+  --glass: rgba(13, 13, 13, 0.72);
+  --glass-pressed: rgba(20, 20, 20, 0.85);
   --brass: #a1885e;
   --brass-flat: #c9ad7a;
+  --brass-shine: #f0e2b6;
   --gold: #f5cc58;
-  --blue: #3964be;
-  --blue-pale: #9ec5ff;
+  --gold-core: #fff1c9;
+  --mist: #a6a6a6;
   --rose: #ff6f91;
   --amber: #d49949;
   --bone: #ece9df;
@@ -24,7 +25,6 @@
   --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-brand: "Outfit", var(--font);
 }
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
@@ -43,9 +43,9 @@ body::before {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(1200px 600px at 15% -10%, rgba(57, 100, 190, 0.22), transparent 60%),
-    radial-gradient(900px 500px at 90% 10%, rgba(161, 136, 94, 0.14), transparent 60%),
-    linear-gradient(180deg, #0a1236 0%, #090908 55%);
+    radial-gradient(1200px 600px at 15% -10%, rgba(245, 204, 88, 0.10), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(161, 136, 94, 0.12), transparent 60%),
+    linear-gradient(180deg, #0d0d0d 0%, #040404 55%);
 }
 
 a { color: var(--brass-flat); text-decoration: none; }
@@ -106,7 +106,7 @@ em { color: var(--gold); font-style: italic; }
   color: var(--bone);
   letter-spacing: -0.01em;
 }
-.brand img { width: 34px; height: 34px; object-fit: contain; }
+.brand img { width: auto; height: 46px; object-fit: contain; margin: -4px 0 -8px; }
 .brand:hover { color: var(--bone); }
 .nav { display: flex; align-items: center; gap: 4px; }
 .nav a {
@@ -158,21 +158,14 @@ em { color: var(--gold); font-style: italic; }
 
 /* Hero */
 .hero { padding: 80px 0 60px; position: relative; overflow: hidden; }
-.hero-mark {
-  position: absolute;
-  right: -5%;
-  top: 0;
-  width: min(60vw, 560px);
-  opacity: 0.08;
-  pointer-events: none;
-  filter: grayscale(0.2);
-}
+.hero-logo { display: block; width: min(100%, 760px); height: auto; margin: -56px 0 -24px -5%; }
+@media (max-width: 760px) { .hero-logo { width: 112%; margin: -30px 0 -10px -8%; } }
 .hero .container { position: relative; }
 .hero p.lede { font-size: 1.2rem; }
 
 /* Sections */
 section { padding: 64px 0; }
-section.alt { background: rgba(10, 18, 54, 0.35); border-top: 1px solid var(--divider); border-bottom: 1px solid var(--divider); }
+section.alt { background: rgba(13, 13, 13, 0.6); border-top: 1px solid var(--divider); border-bottom: 1px solid var(--divider); }
 .section-head { max-width: 46rem; margin-bottom: 2rem; }
 
 /* Glass tiles */
@@ -248,7 +241,7 @@ section.alt { background: rgba(10, 18, 54, 0.35); border-top: 1px solid var(--di
 .lane {
   position: relative;
   height: 150px;
-  background: var(--navy);
+  background: var(--black);
   border: 1px solid rgba(161, 136, 94, 0.45);
   border-radius: var(--radius);
   overflow: hidden;
@@ -257,7 +250,7 @@ section.alt { background: rgba(10, 18, 54, 0.35); border-top: 1px solid var(--di
 .lane .playhead { position: absolute; left: 33%; top: 0; bottom: 0; width: 1px; background: var(--brass-flat); opacity: 0.8; }
 .lane .bar {
   position: absolute; height: 18px; border-radius: 9px;
-  background: rgba(57, 100, 190, 0.35); border: 1px solid var(--blue-pale);
+  background: rgba(166, 166, 166, 0.14); border: 1px solid var(--mist);
   animation: scroll 9s linear infinite;
 }
 .lane .bar.hit { background: rgba(245, 204, 88, 0.3); border-color: var(--gold); box-shadow: 0 0 14px rgba(245, 204, 88, 0.45); }
@@ -287,7 +280,7 @@ details p { color: var(--text-2); margin: 0 0 14px; }
 /* Download */
 .download-card { display: grid; gap: 16px; grid-template-columns: 1fr; }
 .download-card .meta { color: var(--text-3); font-size: 0.9rem; }
-.download-card code { color: var(--blue-pale); font-size: 0.85rem; word-break: break-all; }
+.download-card code { color: var(--brass-flat); font-size: 0.85rem; word-break: break-all; }
 .note { border-left: 2px solid var(--amber); padding: 6px 14px; color: var(--text-2); background: rgba(212, 153, 73, 0.07); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
 
 /* Prose pages */
