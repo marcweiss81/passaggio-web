@@ -358,8 +358,8 @@ details p { color: var(--text-2); margin: 0 0 14px; }
 .demo-card .target { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
 .demo-card .target svg { width: 64px; height: 38px; flex: none; }
 .demo-card .target small { color: var(--text-3); font-size: 0.78rem; }
-.demo-card.show .target .sung { animation: lift 1.6s 0.5s ease-in-out infinite alternate; }
-@keyframes lift { from { transform: translateY(10px); } to { transform: translateY(0); } }
+.demo-card.show .target .mouth { animation: yawn 1.8s 0.5s ease-in-out infinite alternate; }
+@keyframes yawn { from { ry: 5; } to { ry: 14; } }
 
 .demo-weak { padding-bottom: 16px; }
 .demo-weak .map { position: relative; margin: 18px 18px 0; height: 54px; }
@@ -402,4 +402,4 @@ details p { color: var(--text-2); margin: 0 0 14px; }
 }
 .demo-weak.built .built-btn { opacity: 1; border-color: var(--gold); color: var(--gold); box-shadow: 0 0 0 4px rgba(245, 204, 88, 0.12), 0 0 24px rgba(245, 204, 88, 0.2); }
 .demo-weak.built .status .pulse { animation: none; background: var(--gold); opacity: 1; }
-@media (prefers-reduced-motion: reduce) { .demo-weak .status .pulse, .demo-card .sung { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .demo-weak .status .pulse, .demo-card .mouth { animation: none; } }
