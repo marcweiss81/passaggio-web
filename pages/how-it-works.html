@@ -1,0 +1,68 @@
+title: How it works — Passaggio
+description: How a Passaggio session runs, from voice setup to results, and how the on-device engine hears pitch and tone.
+
+<section class="hero">
+  <div class="container">
+    <span class="kicker">How it works</span>
+    <h1>From first note to results.</h1>
+    <p class="lede">Headphones in, phone at arm's length, a quiet room. Here is what happens next.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><h3>Voice setup</h3><p>Speak a sentence, sing a step test up and down with the trainer, hold "ah", "ee" and "oo" on a comfortable note, and slide a siren through your range. Passaggio now knows your speaking pitch, range, voice type, bridge and what your own vowels sound like.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h3>Pick a style and a lesson</h3><p>Declare your style, then take Today's plan, a track and level, a warm-up, a favourite, or one of your songs. Each lesson is transposed into your range before it starts.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h3>The trainer sets you up</h3><p>Ginevra or Rocco explains the exercise, a real singer sings the starting note in your key, the piano counts you in. From then on the guide piano strikes each note just before its bar and rings through it.</p></div></div>
+      <div class="step"><div class="n">4</div><div><h3>Sing the lane</h3><p>Bars scroll into the playhead; your pitch line draws live, gold when you're on it. The HUD shows the live note, a cents dial, the chest-to-head glow and a tone word. Stay in tune and the combo grows; from six the bars burn.</p></div></div>
+      <div class="step"><div class="n">5</div><div><h3>Corrections, when earned</h3><p>The first time a habit is heard it's noted silently. The second time a brass card appears with the fix; tap it to hear "not like this… like this" and see the drawing. Keep repeating it and the explanation climbs the seven-rung ladder.</p></div></div>
+      <div class="step"><div class="n">6</div><div><h3>Results</h3><p>A weighted score, round by round, what was seen once, what to work on, and a "Working on" chip for any weak area the lesson fed. 80 % opens the next level.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Under the hood</span>
+      <h2>An engine built to run on the phone.</h2>
+    </div>
+    <div class="grid">
+      <div class="tile">
+        <h3>Low-latency capture</h3>
+        <p>Native audio capture at 48 kHz into a lock-free buffer, analysed on its own thread with 10 ms hops. Output latency is measured per headphone route so the bars line up with what you hear.</p>
+      </div>
+      <div class="tile">
+        <h3>Neural pitch tracking</h3>
+        <p>A CREPE-class neural tracker fused with probabilistic YIN tracking, with dedicated modes for lip trills and hums so semi-occluded sounds don't slip to the wrong octave.</p>
+      </div>
+      <div class="tile">
+        <h3>Tone against your baseline</h3>
+        <p>Breathy, pressed, twang, high larynx, nasal, strain, fry, belt and distortion are read against your own recorded vowels, moved along your pitch trend — never a population norm.</p>
+      </div>
+      <div class="tile">
+        <h3>Register and mix</h3>
+        <p>Chest-to-head balance from spectral cues plus your measured bridge gives a connected-mix reading, so a well-joined upper note reads as "connected", not "chest".</p>
+      </div>
+      <div class="tile">
+        <h3>60 fps lane</h3>
+        <p>Skia and Reanimated on the UI thread, driven by the audio clock. The flames are a procedural shader, not sprites.</p>
+      </div>
+      <div class="tile gold">
+        <h3>Local, encrypted</h3>
+        <p>Results live in an encrypted SQLite database with the key in the Android keystore. The release build has no internet permission at all.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Try a lesson.</h2>
+    <div class="btn-row">
+      <a class="btn" href="/download.html">Download for Android</a>
+      <a class="btn secondary" href="/lessons.html">Browse the tracks</a>
+    </div>
+  </div>
+</section>
