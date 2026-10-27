@@ -12,16 +12,50 @@ description: Passaggio is an AI singing teacher for Android. Live pitch feedback
       <a class="btn" href="/download.html">Get the Android app ↗</a>
       <a class="btn secondary" href="/how-it-works.html">See how it works</a>
     </div>
-    <div class="lane" aria-hidden="true">
-      <div class="playhead"></div>
-      <div class="bar hit" data-syl="ah" style="top:88px;left:0;width:120px"></div>
-      <div class="bar" data-syl="ee" style="top:66px;left:0;width:90px;animation-delay:-1.5s"></div>
-      <div class="bar hit" data-syl="oo" style="top:44px;left:0;width:140px;animation-delay:-3.4s"></div>
-      <div class="bar" data-syl="ah" style="top:66px;left:0;width:100px;animation-delay:-5.6s"></div>
-      <div class="bar" data-syl="brr" style="top:100px;left:0;width:160px;animation-delay:-7.4s"></div>
-      <svg class="line" viewBox="0 0 1000 150" preserveAspectRatio="none">
-        <path d="M0,110 C120,108 180,70 260,70 S400,50 500,52 S700,96 820,90 S960,60 1000,58" fill="none" stroke="#f5cc58" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
-      </svg>
+  </div>
+</section>
+
+<section id="in-action">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">See it in action</span>
+      <h2>A lesson that stops to fix you.</h2>
+      <p class="lede">Sing into the bars. When a habit shows up, the lesson pauses and a brass card names the fix. Between lessons, Passaggio studies what you miss and builds the next one around it.</p>
+    </div>
+    <div class="demos">
+      <div class="demo demo-lesson" aria-label="Animation: a lesson interrupted by a correction">
+        <div class="demo-head"><span class="num">01 / While you sing</span><span>Live pitch line · correction card</span></div>
+        <canvas height="230"></canvas>
+        <div class="demo-card" role="status">
+          <span class="fault">Singing under the note</span>
+          <h4>Hear the note clearly before you sing</h4>
+          <p>Those notes settled a little under the target pitch. Hear the exact note in your head, then sing that sound — keep the breath moving from your lower ribs so it doesn't sag.</p>
+          <div class="target">
+            <svg viewBox="0 0 64 38" aria-hidden="true">
+              <rect x="2" y="8" width="60" height="12" rx="6" fill="rgba(245,204,88,0.25)" stroke="#f5cc58"/>
+              <path class="sung" d="M4,14 C20,13 36,15 60,14" fill="none" stroke="#ff6f91" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <small>Not like this… like this.</small>
+          </div>
+        </div>
+      </div>
+      <div class="demo demo-weak" aria-label="Animation: weak areas analysed and a lesson built">
+        <div class="demo-head"><span class="num">02 / Between lessons</span><span>Passaggio Ai Lessons</span></div>
+        <div class="map" data-phase="step">
+          <svg class="arc" viewBox="0 0 120 40" preserveAspectRatio="none" aria-hidden="true"><path d="M66,30 C72,4 96,4 102,30"/></svg>
+          <div class="keys" data-phase="note">
+            <i data-n="C4"></i><i data-n="D4"></i><i data-n="E4" class="weak"></i><i data-n="F4"></i><i data-n="G4" class="leap"></i><i data-n="A4" class="bridge"></i><i data-n="B4"></i><i data-n="C5" class="leap"></i><i data-n="D5"></i><i data-n="E5"></i><i data-n="F5"></i><i data-n="G5"></i>
+          </div>
+        </div>
+        <ul class="findings">
+          <li data-phase="note"><b>E4 keeps landing flat</b> — 9 of the last 12 times <span class="tag">Weak note</span></li>
+          <li data-phase="step"><b>G4 → C5</b> — the leap is undershot on the way up <span class="tag">Weak jump</span></li>
+          <li data-phase="vowel"><b>"ee" pulls you off above F4</b> — other vowels hold <span class="tag">Vowel</span></li>
+          <li data-phase="fault" class="fault"><b>Sliding up into notes</b> — a scoop on most onsets <span class="tag">Habit</span></li>
+        </ul>
+        <div class="status" data-phase="listen"><span class="pulse"></span><span>Based on <span class="demo-count">1</span> lessons you've sung</span></div>
+        <div class="built-btn" data-phase="lesson">Lesson built — E4, the leap, and your scoop ✦</div>
+      </div>
     </div>
   </div>
 </section>
