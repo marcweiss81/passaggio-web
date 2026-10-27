@@ -106,7 +106,7 @@ em { color: var(--gold); font-style: italic; }
   color: var(--bone);
   letter-spacing: -0.01em;
 }
-.brand img { width: auto; height: 46px; object-fit: contain; margin: -4px 0 -8px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .brand:hover { color: var(--bone); }
 .nav { display: flex; align-items: center; gap: 4px; }
 .nav a {
@@ -158,8 +158,8 @@ em { color: var(--gold); font-style: italic; }
 
 /* Hero */
 .hero { padding: 80px 0 60px; position: relative; overflow: hidden; }
-.hero-logo { display: block; width: min(100%, 760px); height: auto; margin: -56px 0 -24px -5%; }
-@media (max-width: 760px) { .hero-logo { width: 112%; margin: -30px 0 -10px -8%; } }
+.hero-logo { display: block; width: min(100%, 1040px); height: auto; margin: -40px auto 8px; }
+@media (max-width: 760px) { .hero-logo { width: calc(100% + 2 * var(--gutter)); max-width: none; margin: -24px calc(-1 * var(--gutter)) 4px; } }
 .hero .container { position: relative; }
 .hero p.lede { font-size: 1.2rem; }
 
