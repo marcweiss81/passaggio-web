@@ -16,6 +16,7 @@
 <link rel="manifest" href="/assets/site.webmanifest">
 <link rel="preload" href="/assets/fonts/CrimsonPro-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="/assets/site.css?v=g4-2">
+<link rel="stylesheet" href="/assets/layout.css?v=g4-rows1">
 </head>
 <body>
 <header class="site-header home">
@@ -38,7 +39,13 @@
 
   <div class="container">
     <h1 id="hero-title" class="sr-only">Passaggio</h1>
-    <p class="lede">Passaggio is an AI singing teacher on your Android phone. It listens as you sing and tells you how to improve, live. Everything runs on your phone: private, with no account.</p>
+    <p class="kicker">your voice’s path</p>
+    <p class="lede">An AI singing teacher on your Android phone. It listens as you sing and tells you how to improve, live.</p>
+    <ul class="hero-points">
+      <li>Live pitch and technique coaching</li>
+      <li>Lessons built from your own singing</li>
+      <li>Private: no account, nothing leaves your phone</li>
+    </ul>
     <div class="btn-row">
       <a class="btn" href="/download.html">Get the Android app</a>
       <a class="btn secondary" href="/how-it-works.html">How it works</a>
@@ -50,26 +57,35 @@
   <div class="container">
     <div class="section-head">
       <h2>Feel your technique</h2>
-      <p class="lede">Hold a note. Six live guides read your sound: soft palate, throat space, free or pressed tone, breath, vowel shape and the bridge (where your voice shifts from chest to head). Each turns green when it's right.</p>
+      <p class="lede">Hold a note and six live guides read your sound. Each turns green when it's right.</p>
     </div>
-    <div class="grid">
-      <div class="tile gold">
-        <span class="num">01 / Live guides</span>
-        <h3>Six guides</h3>
-        <p>Each one compares you with your own voice, not an average singer.</p>
-      </div>
-      <div class="tile gold">
-        <span class="num">02 / Guided practice</span>
-        <h3>72 seconds</h3>
-        <p>Six short steps. Each gives you a vowel to sing and one thing to try, and shows if it's working.</p>
-      </div>
-      <div class="tile gold">
-        <span class="num">03 / Remember it</span>
-        <h3>Keep the feeling</h3>
-        <p>Save the sound when it's right. Later lessons remind you of it.</p>
-      </div>
-    </div>
-    <p class="lede">First on the Technique tab. The guides compare sounds; they don't measure your throat.</p>
+    <ol class="rows">
+      <li class="row tile row--selected">
+        <span class="row__num">01</span>
+        <div class="row__body">
+          <h3 class="row__title">Six live guides</h3>
+          <ul>
+            <li>Soft palate, throat space, free or pressed tone, breath, vowel shape and the bridge.</li>
+            <li>Each one compares you with your own voice, not an average singer.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="row tile">
+        <span class="row__num">02</span>
+        <div class="row__body">
+          <h3 class="row__title">72 seconds of guided practice</h3>
+          <p>Six short steps. Each gives you a vowel to sing and one thing to try, and shows if it's working.</p>
+        </div>
+      </li>
+      <li class="row tile">
+        <span class="row__num">03</span>
+        <div class="row__body">
+          <h3 class="row__title">Keep the feeling</h3>
+          <p>Save the sound when it's right. Later lessons remind you of it.</p>
+        </div>
+      </li>
+    </ol>
+    <p class="lede">On the Technique tab. The guides compare sounds; they don't measure your throat.</p>
   </div>
 </section>
 
@@ -77,7 +93,7 @@
   <div class="container">
     <div class="section-head">
       <h2>A lesson in action</h2>
-      <p class="lede">Sing along to scrolling note bars and see your pitch live. When a habit keeps coming back, a card tells you what to change. After the lesson, Passaggio works out what went wrong and builds your next warm-up and lessons around it.</p>
+      <p class="lede">Sing along to scrolling note bars and see your pitch live. When a habit keeps coming back, a card tells you what to change. After the lesson, Passaggio builds your next warm-up and lessons around what went wrong.</p>
     </div>
     <div class="demos">
       <div class="demo demo-lesson" aria-label="Animation: a lesson interrupted by a correction">
@@ -121,25 +137,41 @@
   <div class="container">
     <div class="section-head">
       <h2>What Passaggio does</h2>
-      <p class="lede">Most apps only check if you hit the note. Passaggio also hears how you make the sound (breath, strain, nasal tone, chest or head voice) and compares it with your own voice.</p>
+      <p class="lede">Most apps only check if you hit the note. Passaggio also hears how you make the sound and compares it with your own voice.</p>
     </div>
-    <div class="grid">
-      <div class="tile">
-        <span class="num">01 / While you sing</span>
-        <h3>Live pitch and technique</h3>
-        <p>Your voice draws a line through the note bars. One word tells you how you sound: clear, airy, tight or nasal.</p>
-      </div>
-      <div class="tile">
-        <span class="num">02 / After each lesson</span>
-        <h3>Ai Warm-up : finding your voice's path</h3>
-        <p>It works out why notes went wrong (strain, the bridge, breath or a vowel), builds your next warm-up to fix it, then checks again. It's always the first warm-up option.</p>
-      </div>
-      <div class="tile">
-        <span class="num">03 / Over time</span>
-        <h3>Passaggio Ai Lessons</h3>
-        <p>Lessons built from the notes you actually sing. The notes, jumps and vowels you keep missing get lessons of their own.</p>
-      </div>
-    </div>
+    <ol class="rows">
+      <li class="row tile">
+        <span class="row__num">01</span>
+        <div class="row__body">
+          <span class="row__tag">While you sing</span>
+          <h3 class="row__title">Live pitch and technique</h3>
+          <ul>
+            <li>Your voice draws a line through the note bars.</li>
+            <li>One word tells you how you sound: clear, airy, tight or nasal.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="row tile row--selected">
+        <span class="row__num">02</span>
+        <div class="row__body">
+          <span class="row__tag">After each lesson</span>
+          <h3 class="row__title">Ai Warm-up: finding your voice's path</h3>
+          <ul>
+            <li>Works out why notes went wrong: strain, the bridge, breath or a vowel.</li>
+            <li>Builds your next warm-up to fix it, then checks again.</li>
+            <li>Always the first warm-up option.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="row tile">
+        <span class="row__num">03</span>
+        <div class="row__body">
+          <span class="row__tag">Over time</span>
+          <h3 class="row__title">Passaggio Ai Lessons</h3>
+          <p>Lessons built from the notes you sing. The notes, jumps and vowels you keep missing get lessons of their own.</p>
+        </div>
+      </li>
+    </ol>
   </div>
 </section>
 
@@ -148,37 +180,49 @@
     <div class="section-head">
       <h2>Also in the app</h2>
     </div>
-    <div class="grid">
-      <div class="tile">
-        <h3>Your voice, measured first</h3>
-        <p>A short setup finds your range, voice type and bridge, and records your vowels. Open Find your bridge to see your voice map any time.</p>
-        <a href="/features.html#your-voice">Voice setup and voice map →</a>
-      </div>
-      <div class="tile">
-        <h3>A trainer who sings</h3>
-        <p>A female and a male trainer voice explain each exercise. Real singers sing the examples, and you hear the wrong way, then the right way.</p>
-        <a href="/features.html#trainer">The trainer →</a>
-      </div>
-      <div class="tile">
-        <h3>Lessons that start themselves</h3>
-        <p>Choose a lesson and it starts after a short spoken intro. Sing notes in tune in a row and the bars catch fire.</p>
-        <a href="/features.html#while-you-sing">While you sing →</a>
-      </div>
-      <div class="tile">
-        <h3>Your own songs</h3>
-        <p>Import a song from your phone. The lyrics sit in the note bars, with a karaoke-style teleprompter and chords.</p>
-        <a href="/features.html#songs">Your songs →</a>
-      </div>
-      <div class="tile">
-        <h3>Judged in your style</h3>
-        <p>Classical, musical theatre, pop, rock, jazz or folk. A belt or breathy tone counts as a mistake only if your style says so.</p>
-        <a href="/lessons.html">Lessons →</a>
-      </div>
-      <div class="tile gold">
-        <h3>Private</h3>
-        <p>No account and no cloud. Everything runs and stays on your phone.</p>
-        <a href="/privacy.html">Privacy →</a>
-      </div>
+    <div class="disclosures">
+      <details class="disclosure tile row--active" open>
+        <summary><span class="row__num">01</span><h3>Your voice, measured first</h3></summary>
+        <div class="disclosure__body">
+          <p>A short setup finds your range, voice type and bridge, and records your vowels. Find your bridge shows your voice map any time.</p>
+          <a href="/features.html#your-voice">Voice setup and voice map →</a>
+        </div>
+      </details>
+      <details class="disclosure tile">
+        <summary><span class="row__num">02</span><h3>A trainer who sings</h3></summary>
+        <div class="disclosure__body">
+          <p>A female and a male trainer voice explain each exercise. Real singers sing the examples: first the wrong way, then the right way.</p>
+          <a href="/features.html#trainer">The trainer →</a>
+        </div>
+      </details>
+      <details class="disclosure tile">
+        <summary><span class="row__num">03</span><h3>Lessons that start themselves</h3></summary>
+        <div class="disclosure__body">
+          <p>Choose a lesson and it starts after a short spoken intro. Sing notes in tune in a row and the bars catch fire.</p>
+          <a href="/features.html#while-you-sing">While you sing →</a>
+        </div>
+      </details>
+      <details class="disclosure tile">
+        <summary><span class="row__num">04</span><h3>Your own songs</h3></summary>
+        <div class="disclosure__body">
+          <p>Import a song from your phone. The lyrics sit in the note bars, with a karaoke-style teleprompter and chords.</p>
+          <a href="/features.html#songs">Your songs →</a>
+        </div>
+      </details>
+      <details class="disclosure tile">
+        <summary><span class="row__num">05</span><h3>Judged in your style</h3></summary>
+        <div class="disclosure__body">
+          <p>Classical, musical theatre, pop, rock, jazz or folk. A belt or breathy tone counts as a mistake only if your style says so.</p>
+          <a href="/lessons.html">Lessons →</a>
+        </div>
+      </details>
+      <details class="disclosure tile row--selected">
+        <summary><span class="row__num">06</span><h3>Private</h3></summary>
+        <div class="disclosure__body">
+          <p>No account and no cloud. Everything runs and stays on your phone.</p>
+          <a href="/privacy.html">Privacy →</a>
+        </div>
+      </details>
     </div>
   </div>
 </section>
@@ -213,7 +257,7 @@
     </nav>
   </div>
 </footer>
-<script src="/assets/site.js?v=noir2" defer></script>
+<script src="/assets/site.js?v=noir3" defer></script>
 <script src="/assets/demos.js?v=2" defer></script>
 </body>
 </html>
