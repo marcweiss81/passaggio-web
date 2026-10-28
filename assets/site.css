@@ -577,3 +577,114 @@ section { padding: 72px 0; }
 /* lede following a grid of tiles needs breathing room */
 .grid + .lede, .tiles + .lede { margin-top: 1.6rem; }
 
+
+/* ==== Ivory Ledger (28 Oct): the site follows the release app (#164). Black page; ivory action
+   rows with black lettering and a brass trim; black lacquer for locked and finished rows with
+   light lettering and a muted green tick; flat surfaces, no decorative glow. Inks are the app's
+   approved black (#141210 / #2A2622) and pearl (#F1EDE4 / #CFC9BC). Applied by Claude while
+   Codex was capped; awaiting Codex's visual sign-off. ==== */
+:root {
+  --ledger-ivory: #efe9da;
+  --ledger-ivory-shade: #e2dac6;
+  --ledger-trim: #a58d62;
+  --ledger-ink: #141210;
+  --ledger-ink-sub: #2a2622;
+  --ledger-link: #5c430f;
+  --ledger-lacquer: #0b0a09;
+  --pearl: #f1ede4;
+  --pearl-sub: #cfc9bc;
+  --tick: #84b48e;
+}
+
+/* No decorative glow: a plain black page and header (Codex's 15:39 review). */
+body::before { background: #000; }
+.site-header { box-shadow: none; }
+.tile::before { background: none; }
+
+/* Main action: a flat ivory face, black lettering, brass trim (no gradient, no glow). */
+.btn.btn--primary, .nav .cta {
+  background: var(--ledger-ivory);
+  color: var(--ledger-ink);
+  text-shadow: none;
+  border: 1px solid var(--ledger-trim);
+  box-shadow: none;
+  filter: none;
+}
+.btn.btn--primary:hover, .nav .cta:hover {
+  background: var(--ledger-ivory-shade);
+  color: var(--ledger-ink);
+  border-color: var(--ledger-trim);
+  box-shadow: none;
+  filter: none;
+}
+.btn.btn--primary:active, .nav .cta:active {
+  background: var(--ledger-ivory-shade);
+  box-shadow: inset 0 3px 6px rgba(20, 18, 16, 0.25);
+}
+.btn:hover { box-shadow: none; }
+
+/* Rows and disclosures: ivory faces with a brass trim and black lettering. */
+.tile.row, details.disclosure {
+  background: var(--ledger-ivory);
+  border: 1px solid var(--ledger-trim);
+  border-radius: 14px;
+  box-shadow: none;
+  color: var(--ledger-ink);
+}
+.row .row__title, .disclosure > summary h2, .disclosure > summary h3 { color: var(--ledger-ink); }
+.row .row__body p, .row .row__body li, .disclosure__body p, .disclosure__body li,
+.disclosure__body ul { color: var(--ledger-ink-sub); }
+.row .row__tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ledger-ink-sub);
+}
+.row__num {
+  font-family: var(--font-brand);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ledger-ink);
+  border-right: 1px solid rgba(165, 141, 98, 0.7);
+}
+.disclosure > summary::after { color: var(--ledger-ink); }
+.row a, .disclosure__body a { color: var(--ledger-link); text-decoration: underline; }
+.row a:hover, .disclosure__body a:hover { color: var(--ledger-ink); }
+.row strong, .disclosure__body strong { color: var(--ledger-ink); }
+.tile.row :focus-visible, details.disclosure :focus-visible,
+.btn.btn--primary:focus-visible, .nav .cta:focus-visible {
+  outline: 2px solid var(--ledger-ink);
+  outline-offset: 2px;
+}
+
+/* States */
+/* Selected or recommended: softly shaded, pressed-in ivory. */
+.tile.row.row--selected, details.disclosure.row--selected {
+  background: var(--ledger-ivory-shade);
+  box-shadow: inset 0 3px 6px rgba(20, 18, 16, 0.18);
+}
+/* Active (open, or the next step): a heavier brass trim. */
+.tile.row.row--active, details.disclosure.row--active, details.disclosure[open] {
+  border-width: 2px;
+}
+/* Locked and done: black lacquer with a brass trim and light lettering. */
+.tile.row.row--locked, .tile.row.row--done {
+  background: var(--ledger-lacquer);
+  border-color: var(--ledger-trim);
+}
+.row--locked .row__title, .row--done .row__title, .row--locked .row__num, .row--done .row__num {
+  color: var(--pearl);
+}
+.row--locked .row__body p, .row--done .row__body p { color: var(--pearl-sub); }
+.row--locked .row__body > p { opacity: 1; }
+.row--done .row__title::after {
+  content: "\2713";
+  margin-left: 8px;
+  color: var(--tick);
+  font-family: var(--font);
+  font-size: 0.95em;
+}
+
+/* The demo's not-yet-built button was 0.35 opacity (about 1.7:1); now readable. */
+.demo-weak .built-btn { opacity: 0.6; }
+.demo-weak.built .built-btn { box-shadow: none; }
