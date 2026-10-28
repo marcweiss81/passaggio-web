@@ -688,3 +688,21 @@ body::before { background: #000; }
 /* The demo's not-yet-built button was 0.35 opacity (about 1.7:1); now readable. */
 .demo-weak .built-btn { opacity: 0.6; }
 .demo-weak.built .built-btn { box-shadow: none; }
+
+/* Page and section titles in shiny brass (Marc, 28 Oct); subtext stays ivory. Titles inside the
+   ivory rows and disclosures keep the black ink. */
+main h1, main h2 { color: var(--g2-mid); }
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  main h1, main h2 {
+    background-image: var(--g2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+main .disclosure h2, main .disclosure h3, main .row h2, main .row h3 {
+  background-image: none;
+  -webkit-text-fill-color: var(--ledger-ink);
+  color: var(--ledger-ink);
+}
