@@ -38,7 +38,7 @@ LAYOUT = """<!doctype html>
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/assets/site.webmanifest">
 <link rel="preload" href="/assets/fonts/CrimsonPro-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="/assets/site.css?v=g4-2">
+<link rel="stylesheet" href="/assets/site.css?v=g4-ledger1">
 <link rel="stylesheet" href="/assets/layout.css?v=g4-rows1">
 </head>
 <body>
