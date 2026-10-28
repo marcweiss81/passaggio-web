@@ -706,3 +706,22 @@ main .disclosure h2, main .disclosure h3, main .row h2, main .row h3 {
   -webkit-text-fill-color: var(--ledger-ink);
   color: var(--ledger-ink);
 }
+
+/* The phone Menu button matches Download: flat ivory, black lettering, brass trim. */
+.menu-btn {
+  background: var(--ledger-ivory);
+  color: var(--ledger-ink);
+  text-shadow: none;
+  border: 1px solid var(--ledger-trim);
+  box-shadow: none;
+  filter: none;
+}
+.menu-btn:hover, .menu-btn[aria-expanded="true"] {
+  background: var(--ledger-ivory-shade);
+  color: var(--ledger-ink);
+  border-color: var(--ledger-trim);
+  box-shadow: none;
+  filter: none;
+}
+.menu-btn:active { background: var(--ledger-ivory-shade); box-shadow: inset 0 3px 6px rgba(20, 18, 16, 0.25); }
+.menu-btn:focus-visible { outline: 2px solid var(--ledger-ink); outline-offset: 2px; }
