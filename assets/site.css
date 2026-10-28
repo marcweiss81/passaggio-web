@@ -1,4 +1,11 @@
-/* Passaggio website — Noir palette, the app's default (src/theme/colors.ts + schemes.ts "noir") */
+/* Passaggio website — Noir palette, the app's default (src/theme/colors.ts + schemes.ts "noir").
+   Fonts are self-hosted (SIL OFL: Crimson Pro, Inter; licences in assets/fonts/). */
+@font-face { font-family: "Crimson Pro"; font-weight: 400; font-style: normal; font-display: swap; src: url("/assets/fonts/CrimsonPro-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Crimson Pro"; font-weight: 500; font-style: normal; font-display: swap; src: url("/assets/fonts/CrimsonPro-Medium.ttf") format("truetype"); }
+@font-face { font-family: "Crimson Pro"; font-weight: 600; font-style: normal; font-display: swap; src: url("/assets/fonts/CrimsonPro-SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-weight: 400; font-style: normal; font-display: swap; src: url("/assets/fonts/Inter-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-weight: 500; font-style: normal; font-display: swap; src: url("/assets/fonts/Inter-Medium.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-weight: 600; font-style: normal; font-display: swap; src: url("/assets/fonts/Inter-SemiBold.ttf") format("truetype"); }
 :root {
   --bg: #040404;
   --black: #060606;
@@ -23,7 +30,7 @@
   --max: 1120px;
   --gutter: 20px;
   --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-brand: "Outfit", var(--font);
+  --font-brand: "Crimson Pro", Georgia, "Times New Roman", serif;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
@@ -408,3 +415,294 @@ main h1, main h2 { text-align: center; }
 .site-footer .container { text-align: center; justify-items: center; }
 .site-footer nav { justify-content: center; }
 @media (min-width: 700px) { .site-footer .container { grid-template-columns: 1fr; } }
+
+
+/* ==== G4 (Marc, 28 Oct): match the app. OLED noir, satin antique brass, raised and engraved
+   buttons with a thin dark inset rim, Crimson Pro SemiBold headings, ivory text with metallic
+   gold accents for secondary and completed items. Copy is untouched; this is styling only. ==== */
+:root {
+  --ivory: #f1ecdd;
+  --satin-hi: #c9b383;
+  --satin: #a58d62;
+  --satin-lo: #7b6741;
+  --rim-dark: #120e07;
+  --g2-hi: #e6d29a;
+  --g2-mid: #c4a867;
+  --g2-lo: #9a8148;
+  --g2: linear-gradient(180deg, var(--g2-hi) 0%, var(--g2-mid) 55%, var(--g2-lo) 100%);
+}
+body { background: #000; color: var(--ivory); }
+body::before {
+  background:
+    radial-gradient(1100px 520px at 18% -12%, rgba(165, 141, 98, 0.10), transparent 62%),
+    radial-gradient(800px 440px at 88% 6%, rgba(165, 141, 98, 0.07), transparent 62%),
+    #000;
+}
+h1, h2, h3, h4 { font-family: var(--font-brand); font-weight: 600; letter-spacing: 0.005em; color: var(--ivory); }
+h1 { line-height: 1.05; }
+h3 { font-size: 1.35rem; font-weight: 600; }
+.demo-card h4 { font-size: 1.2rem; }
+a { color: var(--g2-mid); }
+a:hover { color: var(--g2-hi); }
+:focus-visible { outline: 2px solid var(--g2-hi); outline-offset: 3px; border-radius: 6px; }
+
+/* Metallic gold G2 for accents: gradient ink with a flat fallback colour. */
+em, .kicker, .tile .num, .track::before, .demo-head .num, .nav a[aria-current="page"], .step .n, .demo-card h4 {
+  color: var(--g2-mid);
+}
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  em, .tile .num, .demo-head .num, .kicker, .demo-card h4, .step .n {
+    background-image: var(--g2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+em { font-style: italic; }
+.lede, .tile p, .step p, details p, .prose p, .prose li, .feature-block ul { color: #b9b5a6; }
+
+/* Header: centred brand, centred navigation, hairline of satin brass. */
+.site-header { background: rgba(0, 0, 0, 0.82); border-bottom: 1px solid rgba(165, 141, 98, 0.32); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.9), 0 12px 28px rgba(0, 0, 0, 0.55); }
+.nav { gap: 6px; }
+.nav a { font-family: var(--font); letter-spacing: 0.01em; color: #b9b5a6; }
+.nav a:hover { color: var(--ivory); background: rgba(165, 141, 98, 0.10); }
+.nav a[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--satin-lo); }
+.nav a.cta { margin-left: 10px; }
+
+/* Raised satin-brass button (primary): brushed gradient, thin dark inset rim, top specular
+   line, soft drop; dark ink label in Crimson Pro SemiBold. */
+.btn, .nav .cta, .menu-btn {
+  position: relative;
+  font-family: var(--font-brand);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #1a1409;
+  text-shadow: 0 1px 0 rgba(255, 244, 214, 0.35);
+  background: linear-gradient(180deg, var(--satin-hi) 0%, var(--satin) 46%, var(--satin-lo) 100%);
+  border: 1px solid var(--rim-dark);
+  box-shadow:
+    inset 0 0 0 1px rgba(18, 14, 7, 0.55),
+    inset 0 2px 1px rgba(255, 242, 205, 0.38),
+    inset 0 -3px 3px rgba(40, 30, 12, 0.35),
+    0 1px 0 rgba(255, 240, 200, 0.10),
+    0 6px 14px rgba(0, 0, 0, 0.7);
+  transition: transform 0.12s, box-shadow 0.12s, filter 0.15s;
+}
+.btn { font-size: 1.15rem; padding: 12px 26px; border-radius: 13px; justify-content: center; min-height: 48px; }
+.nav .cta { font-size: 1.08rem; padding: 8px 18px; border-radius: 11px; color: #1a1409; }
+.btn:hover, .nav .cta:hover, .menu-btn:hover {
+  color: #1a1409;
+  border-color: var(--rim-dark);
+  filter: brightness(1.07);
+  background: linear-gradient(180deg, var(--satin-hi) 0%, var(--satin) 46%, var(--satin-lo) 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(18, 14, 7, 0.55),
+    inset 0 2px 1px rgba(255, 242, 205, 0.45),
+    inset 0 -3px 3px rgba(40, 30, 12, 0.35),
+    0 8px 18px rgba(0, 0, 0, 0.75);
+}
+.btn:active, .nav .cta:active, .menu-btn:active {
+  transform: translateY(1px);
+  filter: brightness(0.96);
+  box-shadow:
+    inset 0 0 0 1px rgba(18, 14, 7, 0.6),
+    inset 0 3px 6px rgba(20, 14, 4, 0.55),
+    0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Engraved button (secondary): recessed into the black, ivory label, brass hairline. */
+.btn.secondary {
+  color: var(--ivory);
+  text-shadow: none;
+  background: linear-gradient(180deg, #050505 0%, #0d0c0a 100%);
+  border: 1px solid var(--rim-dark);
+  box-shadow:
+    inset 0 0 0 1px rgba(165, 141, 98, 0.42),
+    inset 0 3px 7px rgba(0, 0, 0, 0.9),
+    0 1px 0 rgba(201, 179, 131, 0.22);
+}
+.btn.secondary:hover {
+  color: var(--g2-hi);
+  filter: none;
+  background: linear-gradient(180deg, #050505 0%, #0d0c0a 100%);
+  border-color: var(--rim-dark);
+  box-shadow:
+    inset 0 0 0 1px rgba(201, 179, 131, 0.65),
+    inset 0 3px 7px rgba(0, 0, 0, 0.9),
+    0 1px 0 rgba(201, 179, 131, 0.3);
+}
+.menu-btn { padding: 8px 20px; font-size: 1.05rem; border-radius: 11px; }
+
+/* Tiles and panels: black glass, brass hairline, a faint satin sheen top-left. */
+.tile, .track, details, .demo, .lane {
+  background: linear-gradient(160deg, rgba(20, 18, 15, 0.92), rgba(6, 6, 6, 0.95));
+  border-color: rgba(165, 141, 98, 0.40);
+  box-shadow: inset 0 1px 0 rgba(241, 236, 221, 0.05), 0 10px 26px rgba(0, 0, 0, 0.55);
+}
+.tile::before { background: linear-gradient(135deg, rgba(201, 179, 131, 0.10), transparent 38%); }
+.tile.gold { border-color: rgba(196, 168, 103, 0.55); box-shadow: inset 0 1px 0 rgba(241, 236, 221, 0.06), 0 10px 26px rgba(0, 0, 0, 0.55); }
+section.alt { background: rgba(10, 9, 8, 0.7); }
+.rule { background: linear-gradient(90deg, transparent, var(--satin) 20%, var(--satin) 80%, transparent); }
+summary::after { color: var(--g2-mid); }
+
+/* Step numbers: engraved brass medallions. */
+.step .n {
+  font-family: var(--font-brand);
+  font-size: 1.25rem;
+  background-color: #070707;
+  border: 1px solid var(--rim-dark);
+  box-shadow: inset 0 0 0 1px rgba(165, 141, 98, 0.55), inset 0 2px 5px rgba(0, 0, 0, 0.9), 0 1px 0 rgba(201, 179, 131, 0.2);
+}
+
+/* Footer */
+.site-footer { background: #000; border-top: 1px solid rgba(165, 141, 98, 0.32); }
+.site-footer .credit { font-family: var(--font-brand); font-weight: 600; font-size: 1.2rem; color: var(--g2-mid); }
+.site-footer nav a { color: #b9b5a6; }
+.site-footer nav a:hover { color: var(--g2-hi); }
+
+/* Balanced spacing */
+section { padding: 72px 0; }
+.section-head { margin-bottom: 2.4rem; }
+.btn-row { gap: 16px; margin-top: 2rem; }
+@media (max-width: 760px) {
+  section { padding: 52px 0; }
+  .btn-row { flex-direction: column; align-items: stretch; }
+  .btn-row .btn { width: 100%; }
+  .nav a { color: #cfcabb; }
+  .nav .cta { color: #1a1409; }
+}
+@media (prefers-reduced-motion: reduce) { .btn, .nav .cta, .menu-btn { transition: none; } }
+
+/* lede following a grid of tiles needs breathing room */
+.grid + .lede, .tiles + .lede { margin-top: 1.6rem; }
+
+
+/* ==== Ivory Ledger (28 Oct): the site follows the release app (#164). Black page; ivory action
+   rows with black lettering and a brass trim; black lacquer for locked and finished rows with
+   light lettering and a muted green tick; flat surfaces, no decorative glow. Inks are the app's
+   approved black (#141210 / #2A2622) and pearl (#F1EDE4 / #CFC9BC). Applied by Claude while
+   Codex was capped; awaiting Codex's visual sign-off. ==== */
+:root {
+  --ledger-ivory: #efe9da;
+  --ledger-ivory-shade: #e2dac6;
+  --ledger-trim: #a58d62;
+  --ledger-ink: #141210;
+  --ledger-ink-sub: #2a2622;
+  --ledger-link: #5c430f;
+  --ledger-lacquer: #0b0a09;
+  --pearl: #f1ede4;
+  --pearl-sub: #cfc9bc;
+  --tick: #84b48e;
+}
+
+/* No decorative glow: a plain black page and header (Codex's 15:39 review). */
+body::before { background: #000; }
+.site-header { box-shadow: none; }
+.tile::before { background: none; }
+
+/* Main action: a flat ivory face, black lettering, brass trim (no gradient, no glow). */
+.btn.btn--primary, .nav .cta {
+  background: var(--ledger-ivory);
+  color: var(--ledger-ink);
+  text-shadow: none;
+  border: 1px solid var(--ledger-trim);
+  box-shadow: none;
+  filter: none;
+}
+.btn.btn--primary:hover, .nav .cta:hover {
+  background: var(--ledger-ivory-shade);
+  color: var(--ledger-ink);
+  border-color: var(--ledger-trim);
+  box-shadow: none;
+  filter: none;
+}
+.btn.btn--primary:active, .nav .cta:active {
+  background: var(--ledger-ivory-shade);
+  box-shadow: inset 0 3px 6px rgba(20, 18, 16, 0.25);
+}
+.btn:hover { box-shadow: none; }
+
+/* Rows and disclosures: ivory faces with a brass trim and black lettering. */
+.tile.row, details.disclosure {
+  background: var(--ledger-ivory);
+  border: 1px solid var(--ledger-trim);
+  border-radius: 14px;
+  box-shadow: none;
+  color: var(--ledger-ink);
+}
+.row .row__title, .disclosure > summary h2, .disclosure > summary h3 { color: var(--ledger-ink); }
+.row .row__body p, .row .row__body li, .disclosure__body p, .disclosure__body li,
+.disclosure__body ul { color: var(--ledger-ink-sub); }
+.row .row__tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ledger-ink-sub);
+}
+.row__num {
+  font-family: var(--font-brand);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ledger-ink);
+  border-right: 1px solid rgba(165, 141, 98, 0.7);
+}
+.disclosure > summary::after { color: var(--ledger-ink); }
+.row a, .disclosure__body a { color: var(--ledger-link); text-decoration: underline; }
+.row a:hover, .disclosure__body a:hover { color: var(--ledger-ink); }
+.row strong, .disclosure__body strong { color: var(--ledger-ink); }
+.tile.row :focus-visible, details.disclosure :focus-visible,
+.btn.btn--primary:focus-visible, .nav .cta:focus-visible {
+  outline: 2px solid var(--ledger-ink);
+  outline-offset: 2px;
+}
+
+/* States */
+/* Selected or recommended: softly shaded, pressed-in ivory. */
+.tile.row.row--selected, details.disclosure.row--selected {
+  background: var(--ledger-ivory-shade);
+  box-shadow: inset 0 3px 6px rgba(20, 18, 16, 0.18);
+}
+/* Active (open, or the next step): a heavier brass trim. */
+.tile.row.row--active, details.disclosure.row--active, details.disclosure[open] {
+  border-width: 2px;
+}
+/* Locked and done: black lacquer with a brass trim and light lettering. */
+.tile.row.row--locked, .tile.row.row--done {
+  background: var(--ledger-lacquer);
+  border-color: var(--ledger-trim);
+}
+.row--locked .row__title, .row--done .row__title, .row--locked .row__num, .row--done .row__num {
+  color: var(--pearl);
+}
+.row--locked .row__body p, .row--done .row__body p { color: var(--pearl-sub); }
+.row--locked .row__body > p { opacity: 1; }
+.row--done .row__title::after {
+  content: "\2713";
+  margin-left: 8px;
+  color: var(--tick);
+  font-family: var(--font);
+  font-size: 0.95em;
+}
+
+/* The demo's not-yet-built button was 0.35 opacity (about 1.7:1); now readable. */
+.demo-weak .built-btn { opacity: 0.6; }
+.demo-weak.built .built-btn { box-shadow: none; }
+
+/* Page and section titles in shiny brass (Marc, 28 Oct); subtext stays ivory. Titles inside the
+   ivory rows and disclosures keep the black ink. */
+main h1, main h2 { color: var(--g2-mid); }
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  main h1, main h2 {
+    background-image: var(--g2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+main .disclosure h2, main .disclosure h3, main .row h2, main .row h3 {
+  background-image: none;
+  -webkit-text-fill-color: var(--ledger-ink);
+  color: var(--ledger-ink);
+}

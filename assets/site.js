@@ -78,10 +78,19 @@
     });
   }
 
+  // A link such as /features.html#songs opens that disclosure section.
+  function openLinkedDisclosure() {
+    if (!location.hash) return;
+    const target = document.getElementById(location.hash.slice(1));
+    if (target && target.tagName === "DETAILS") target.open = true;
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     setupMenu();
+    openLinkedDisclosure();
     markCurrentPage();
     fillDownload();
     setYear();
   });
+  window.addEventListener("hashchange", openLinkedDisclosure);
 })();
