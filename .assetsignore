@@ -9,3 +9,7 @@ wrangler.jsonc
 .gitignore
 node_modules
 .wrangler
+.claude
+CLAUDE.md
+AGENTS.md
+docs
