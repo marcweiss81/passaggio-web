@@ -62,7 +62,7 @@ LAYOUT = """<!doctype html>
   <div class="container">
     <div>
       <div class="credit">passaggio · {tagline}</div>
-      <div>An AI singing teacher for Android. © <span data-year>2026</span> Passaggio. Design: Marc Weiss design.</div>
+      <div>An AI singing teacher for Android. © <span data-year>2026</span> Passaggio. Design: Weiss Technologies.</div>
     </div>
     <nav aria-label="Footer">
       <a href="/features.html">Features</a>
