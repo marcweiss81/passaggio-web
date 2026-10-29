@@ -8,6 +8,8 @@
   artwork or the look of a screen, and neither do agents Claude starts. If a task would touch
   anything visual, stop and ask Marc first under a "⚠️ VISUAL CHANGE: needs your OK" heading,
   and show him the attempt before it goes near a branch, PR or build.
+  When a request seems to call for Claude (or its agents) doing visual work, don't ask Marc:
+  delegate it to Codex automatically and have Codex dispatch its own agents (Marc, Oct 29).
 - **Ask Matt first; brief agents with writing-for-agents (Marc, Oct 29).** Before writing code or
   directing any other agent (Codex, sub-agents, other sessions), run Matt Pocock's `ask-matt` to
   pick the flow, and write every delegation brief with his `writing-for-agents` skill. Here,
