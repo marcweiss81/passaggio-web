@@ -10,5 +10,5 @@
   and show him the attempt before it goes near a branch, PR or build.
 - **Ask Matt first; brief agents with writing-for-agents (Marc, Oct 29).** Before writing code or
   directing any other agent (Codex, sub-agents, other sessions), run Matt Pocock's `ask-matt` to
-  pick the flow, and write every delegation brief with his `writing-for-agents` skill. Only Marc
-  can start `ask-matt` (`/mattpocock-skills:ask-matt`); when it hasn't run this session, ask him.
+  pick the flow, and write every delegation brief with his `writing-for-agents` skill. Here,
+  run the repo's own `ask-matt` skill (`.claude/skills/ask-matt`) yourself; no need to ask Marc.
