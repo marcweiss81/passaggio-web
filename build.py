@@ -29,6 +29,7 @@ LAYOUT = """<!doctype html>
 <title>{title}</title>
 <meta name="description" content="{description}">
 <meta name="theme-color" content="#040404">
+<meta name="color-scheme" content="dark">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
 <meta property="og:type" content="website">
