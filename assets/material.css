@@ -97,3 +97,6 @@ main .disclosure h2::after, main .row h2::after { content:none; }
   .phones { grid-template-columns:min(240px,70vw); margin-top:32px; }
   .phone--side { display:none; }
 }
+.section-art { display:block; width:72px; height:72px; margin:0 auto 16px; }
+.section-art--head { width:240px; height:240px; margin-bottom:24px; }
+@media (max-width:760px) { .section-art--head { width:200px; height:200px; } }
