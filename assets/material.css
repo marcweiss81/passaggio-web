@@ -1,0 +1,16 @@
+/* App look (3 Nov): values from src/theme/ledger.ts, colors.ts, EtchedText. Loaded last. */
+@font-face { font-family:"Cormorant Garamond"; font-weight:300; font-style:normal; font-display:swap; src:url("/assets/fonts/CormorantGaramond-Light.ttf") format("truetype"); }
+:root {
+  --m-ivory: linear-gradient(180deg,#f4ecd9 0%,#e6dac0 50%,#c9b992 100%);
+  --m-ivory-trim: linear-gradient(180deg,#e8cb8a 0%,#c4a05a 50%,#8f6f33 100%);
+  --m-lacquer: linear-gradient(180deg,#26211b 0%,#14110d 45%,#080706 100%);
+  --m-lacquer-trim: linear-gradient(180deg,#dcbc7c 0%,#b48d4e 35%,#9b7a40 75%,#7a5a2b 100%);
+  --m-sunk: linear-gradient(rgba(10,8,5,.13),rgba(10,8,5,.13));
+  --m-fade: linear-gradient(90deg,transparent,rgba(161,136,94,.6) 20%,rgba(161,136,94,.6) 80%,transparent);
+  --m-stage: radial-gradient(120% 100% at 50% 0%,#1a1712 0%,#0b0a08 45%,#000 100%);
+}
+body, body::before { background:#000; }
+.site-header { background:#000; border-bottom:1px solid transparent; border-image:var(--m-fade) 1; }
+.brand img { -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); }
+section.alt { background:var(--m-stage); border-top:1px solid transparent; border-bottom:1px solid transparent; border-image:var(--m-fade) 1; }
+.site-footer { border-top:1px solid transparent; border-image:var(--m-fade) 1; }
