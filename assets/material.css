@@ -100,3 +100,14 @@ main .disclosure h2::after, main .row h2::after { content:none; }
 .section-art { display:block; width:72px; height:72px; margin:0 auto 16px; }
 .section-art--head { width:240px; height:240px; margin-bottom:24px; }
 @media (max-width:760px) { .section-art--head { width:200px; height:200px; } }
+
+@keyframes m-breathe { from { filter:brightness(1); } to { filter:brightness(1.08); } }
+@keyframes m-rise { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
+.site-header.home .brand img { animation:m-breathe 6s ease-in-out infinite alternate; }
+.phone { animation:m-rise .6s cubic-bezier(.2,.7,.2,1) both; }
+.phone--side { animation-delay:.12s; }
+@media (prefers-reduced-motion: reduce) {
+  .site-header.home .brand img, .phone { animation:none; }
+  .btn, .nav .cta, .menu-btn { transition:none; }
+  .btn:active, .nav .cta:active, .menu-btn:active { transform:none; }
+}
