@@ -65,3 +65,24 @@ section.alt { background:var(--m-stage); border-top:1px solid transparent; borde
 .btn:not(.secondary):focus-visible, .nav .cta:focus-visible, .menu-btn:focus-visible {
   outline:2px solid #141210; outline-offset:2px;
 }
+
+main h1:not(.sr-only), main h2 {
+  font-family:"Cormorant Garamond","Crimson Pro",Georgia,serif; font-weight:300; letter-spacing:-.02em;
+  background-image:none; -webkit-text-fill-color:#f0e2c3; color:#f0e2c3;
+  text-shadow:-1px -1px 0 rgba(201,173,122,.4), 1px 1px 0 rgba(4,4,4,.75);
+}
+main h1:not(.sr-only) { font-size:clamp(2.6rem,7vw,4.4rem); }
+main h2 { font-size:clamp(2rem,4.5vw,2.75rem); }
+main h1:not(.sr-only)::after, main h2::after {
+  content:""; display:block; width:32px; height:1px; margin:12px auto 0; background:#c3975d;
+}
+main .disclosure h2, main .disclosure h3, main .row h2, main .row h3 {
+  font-family:var(--font-brand); font-weight:600; letter-spacing:0; font-size:1.2rem; text-shadow:none;
+  -webkit-text-fill-color:#141210; color:#141210;
+}
+main .disclosure h2::after, main .row h2::after { content:none; }
+.row--locked .row__title, .row--done .row__title { -webkit-text-fill-color:#f1ede4; color:#f1ede4; }
+.kicker {
+  background-image:none; -webkit-text-fill-color:#c9ad7a; color:#c9ad7a;
+  font-weight:600; font-size:.8125rem; line-height:18px; text-transform:none; letter-spacing:.3em;
+}
