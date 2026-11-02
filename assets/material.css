@@ -111,6 +111,6 @@ main .disclosure h2::after, main .row h2::after { content:none; }
 .phone--side { animation-delay:.12s; }
 @media (prefers-reduced-motion: reduce) {
   .site-header.home .brand img, .phone { animation:none; }
-  .btn, .nav .cta, .menu-btn { transition:none; }
+  .btn, .btn:not(.secondary), .nav .cta, .menu-btn { transition:none; }
   .btn:active, .nav .cta:active, .menu-btn:active { transform:none; }
 }
