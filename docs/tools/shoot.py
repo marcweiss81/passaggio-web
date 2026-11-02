@@ -134,6 +134,27 @@ def capture(page, width, height, phase):
                 "clip": {"x": 0, "y": 0, "width": width, "height": height, "scale": 1}})
             dest.write_bytes(base64.b64decode(shot["data"]))
             print(f"{dest.relative_to(ROOT)} {json.dumps(metrics)}", flush=True)
+            if phase == "after":
+                client.call("Input.dispatchKeyEvent", {"type": "keyDown", "key": "Tab", "code": "Tab", "windowsVirtualKeyCode": 9})
+                client.call("Input.dispatchKeyEvent", {"type": "keyUp", "key": "Tab", "code": "Tab", "windowsVirtualKeyCode": 9})
+                focus = client.evaluate("""(() => {
+                  const checks=[['.brand','rgb(230, 210, 154)',false],['.btn:not(.secondary)','rgb(20, 18, 16)',true],
+                    ['.btn.secondary','rgb(230, 210, 154)',false],['.menu-btn','rgb(20, 18, 16)',true],
+                    ['.nav .cta','rgb(20, 18, 16)',true],['details.disclosure > summary','rgb(20, 18, 16)',true]];
+                  return checks.flatMap(([selector,ink,inset])=>{
+                    const e=document.querySelector(selector); if(!e || !e.getClientRects().length)return [];
+                    e.focus({preventScroll:true}); const s=getComputedStyle(e);
+                    return [{selector,pass:e.matches(':focus-visible') && s.outlineWidth==='2px' && s.outlineColor===ink && (!inset || parseFloat(s.outlineOffset)<0)}];
+                  });
+                })()""")
+                if not all(check["pass"] for check in focus):
+                    raise RuntimeError(f"Focus check failed: {focus}")
+                client.call("Emulation.setEmulatedMedia", {"features": [{"name": "prefers-reduced-motion", "value": "reduce"}]})
+                motion = client.evaluate("""[...document.querySelectorAll('.site-header.home .brand img,.phone')].every(e=>getComputedStyle(e).animationName==='none') &&
+                  [...document.querySelectorAll('.btn,.nav .cta,.menu-btn')].every(e=>getComputedStyle(e).transitionDuration==='0s')""")
+                if not motion:
+                    raise RuntimeError("Reduced-motion check failed")
+                print(f"Focus: PASS ({len(focus)} faces); reduced motion: PASS", flush=True)
         finally:
             if client:
                 client.close()
