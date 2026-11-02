@@ -14,3 +14,54 @@ body, body::before { background:#000; }
 .brand img { -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); }
 section.alt { background:var(--m-stage); border-top:1px solid transparent; border-bottom:1px solid transparent; border-image:var(--m-fade) 1; }
 .site-footer { border-top:1px solid transparent; border-image:var(--m-fade) 1; }
+
+.btn:not(.secondary), .nav .cta, .menu-btn {
+  color:#141210; text-shadow:0 1px 0 rgba(255,243,210,.35); filter:none;
+  border:1.5px solid transparent;
+  background:var(--m-ivory) padding-box, var(--m-ivory-trim) border-box;
+  box-shadow:inset 0 0 0 1px rgba(11,8,5,.55), inset 0 1px 0 1px rgba(255,243,210,.28), 0 1.8px 2.4px rgba(0,0,0,.72), 0 12px 28px rgba(0,0,0,.55);
+  transition:transform .12s;
+}
+.btn { border-radius:999px; min-height:56px; padding:12px 32px; }
+.nav .cta, .menu-btn { border-radius:999px; }
+.btn:not(.secondary):hover, .nav .cta:hover, .menu-btn:hover, .menu-btn[aria-expanded="true"],
+.btn:not(.secondary):active, .nav .cta:active, .menu-btn:active {
+  color:#141210; border-color:transparent; filter:none;
+  background:var(--m-sunk) padding-box, var(--m-ivory) padding-box, var(--m-ivory-trim) border-box;
+  box-shadow:inset 0 0 0 1px rgba(11,8,5,.55), inset 0 7px 7px -4px rgba(0,0,0,.3), 0 .8px 2.4px rgba(0,0,0,.55);
+}
+.btn:active, .nav .cta:active, .menu-btn:active { transform:translateY(1px); }
+.btn.secondary, .btn.secondary:hover {
+  color:#f1ede4; text-shadow:none; filter:none; border:1.5px solid transparent;
+  background:var(--m-lacquer) padding-box, var(--m-lacquer-trim) border-box;
+  box-shadow:inset 0 0 0 1px rgba(11,8,5,.9), inset 0 1px 0 1px rgba(220,188,124,.18), 0 1.8px 2.4px rgba(0,0,0,.45), 0 12px 28px rgba(0,0,0,.55);
+}
+.tile.row, details.disclosure {
+  border:1.5px solid transparent;
+  background:var(--m-ivory) padding-box, var(--m-ivory-trim) border-box;
+  box-shadow:inset 0 0 0 1px rgba(11,8,5,.55), inset 0 1px 0 1px rgba(255,243,210,.28), 0 1.8px 2.4px rgba(0,0,0,.72), 0 12px 28px rgba(0,0,0,.55);
+}
+.tile.row.row--selected, details.disclosure.row--selected, details.disclosure[open] {
+  border-width:1.5px;
+  background:var(--m-sunk) padding-box, var(--m-ivory) padding-box, var(--m-ivory-trim) border-box;
+  box-shadow:inset 0 0 0 1px rgba(11,8,5,.55), inset 0 7px 7px -4px rgba(0,0,0,.3), 0 .8px 2.4px rgba(0,0,0,.55);
+}
+.tile.row.row--locked, .tile.row.row--done {
+  background:var(--m-lacquer) padding-box, var(--m-lacquer-trim) border-box;
+  box-shadow:inset 0 0 0 1px rgba(11,8,5,.9), inset 0 1px 0 1px rgba(220,188,124,.18), 0 1.8px 2.4px rgba(0,0,0,.45);
+}
+.row a, .disclosure__body a { color:#3f2d08; }
+.tile:not(.row), .track, details:not(.disclosure), .demo, .lane {
+  border:1px solid rgba(161,136,94,.45);
+  background:var(--m-lacquer);
+  box-shadow:inset 0 1px 0 rgba(220,188,124,.18), 0 12px 28px rgba(0,0,0,.55);
+}
+/* Dark outlines on ivory; pearl-gold outlines on black and lacquer. */
+:focus-visible, .btn.secondary:focus-visible,
+.tile.row.row--locked :focus-visible, .tile.row.row--done :focus-visible {
+  outline:2px solid #e6d29a; outline-offset:3px;
+}
+.tile.row :focus-visible, details.disclosure:focus-visible, details.disclosure :focus-visible,
+.btn:not(.secondary):focus-visible, .nav .cta:focus-visible, .menu-btn:focus-visible {
+  outline:2px solid #141210; outline-offset:2px;
+}
