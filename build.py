@@ -33,7 +33,7 @@ LAYOUT = """<!doctype html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
 <meta property="og:type" content="website">
-<meta property="og:image" content="/assets/logo-lockup.png">
+<meta property="og:image" content="/assets/art/logo-og.jpg">
 <link rel="icon" href="/assets/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -46,7 +46,7 @@ LAYOUT = """<!doctype html>
 <body>
 <header class="site-header{header_class}">
   <div class="container">
-    <a class="brand" href="/"><img src="/assets/logo-lockup.png" alt="Passaggio home" width="2389" height="794"></a>
+    <a class="brand" href="/"><img src="/assets/art/logo-960.webp" srcset="/assets/art/logo-480.webp 480w, /assets/art/logo-960.webp 960w, /assets/art/logo-1467.webp 1467w" sizes="{brand_sizes}" alt="Passaggio home" width="1467" height="605"></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="nav" id="site-nav" aria-label="Main">
 {nav}
@@ -111,6 +111,7 @@ def build() -> None:
             tagline=TAGLINE,
             releases=RELEASES,
             header_class=" home" if page.name == "index.html" else "",
+            brand_sizes="(max-width: 760px) 100vw, 1040px" if page.name == "index.html" else "300px",
         )
         (ROOT / page.name).write_text(html, encoding="utf-8")
         print("wrote", page.name)
