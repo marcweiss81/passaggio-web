@@ -41,7 +41,7 @@ LAYOUT = """<!doctype html>
 <link rel="preload" href="/assets/fonts/CrimsonPro-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="/assets/site.css?v=g4-ledger3">
 <link rel="stylesheet" href="/assets/layout.css?v=g4-rows1">
-<link rel="stylesheet" href="/assets/material.css?v=applook1">
+<link rel="stylesheet" href="/assets/material.css?v=polish20261115">
 </head>
 <body>
 <header class="site-header{header_class}">
@@ -77,7 +77,6 @@ LAYOUT = """<!doctype html>
   </div>
 </footer>
 <script src="/assets/site.js?v=noir3" defer></script>
-<script src="/assets/demos.js?v=2" defer></script>
 </body>
 </html>
 """

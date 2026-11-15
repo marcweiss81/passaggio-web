@@ -114,3 +114,59 @@ main .disclosure h2::after, main .row h2::after { content:none; }
   .btn, .btn:not(.secondary), .nav .cta, .menu-btn { transition:none; }
   .btn:active, .nav .cta:active, .menu-btn:active { transform:none; }
 }
+
+/* November polish: static star field, polished brass, and source-based app artwork. */
+body {
+  background-color:#030303;
+  background-image:radial-gradient(1px 1px at 16px 24px,#d3bd8755 80%,transparent),
+    radial-gradient(1px 1px at 117px 83px,#f4ecd933 80%,transparent),
+    radial-gradient(1px 1px at 59px 147px,#d3bd8733 80%,transparent);
+  background-size:173px 191px,239px 251px,293px 277px;
+  overflow-x:visible;
+}
+body::before { content:none; }
+.site-header { background:transparent; }
+main h1:not(.sr-only), main h2 {
+  color:#e7c98b;
+  background:linear-gradient(180deg,#fff1c9 5%,#e8cb8a 32%,#b48d4e 50%,#f2dba1 67%,#c3975d 100%);
+  background-clip:text; -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  text-shadow:0 1px 1px #c9ad7a22;
+}
+main .disclosure h2, main .row h2 { background:none; -webkit-text-fill-color:#141210; text-shadow:none; }
+.app-artwork { max-width:800px; margin:40px auto 0; display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.app-artwork figure { min-width:0; margin:0; border:1px solid #a1885e80; border-radius:18px; overflow:hidden; background:#080706; box-shadow:0 16px 40px #0008; }
+.app-artwork__lane { grid-row:span 2; }
+.app-artwork img { width:100%; height:auto; }
+.explanation { padding:24px; text-align:left; }
+.explanation .guide-art { width:100%; height:auto; border-radius:12px; margin:20px 0; }
+.explanation-card { padding-top:16px; border-top:1px solid #a1885e66; }
+.explanation-card h4 { color:#f0e2b6; }
+.explanation .findings { padding:0; }
+.explanation .findings li { opacity:1; transform:none; }
+.explanation .findings .tag { display:block; width:fit-content; margin:8px 0 0; }
+.explanation .status, .explanation .built-btn { opacity:1; transform:none; height:auto; }
+.explanation .built-btn { white-space:normal; }
+.row__body, .disclosure > summary > h2, .disclosure > summary > h3 { min-width:0; overflow-wrap:anywhere; }
+.btn, .nav .cta { white-space:normal; overflow-wrap:anywhere; }
+.prose, .column, main p { overflow-wrap:anywhere; }
+.site-footer a { display:inline-block; padding:8px 0; }
+/* Two contrasting rings remain visible both inside and outside ivory controls. */
+:focus-visible { outline:2px solid #f0e2b6; outline-offset:4px; }
+.btn:not(.secondary):focus-visible, .nav .cta:focus-visible, .menu-btn:focus-visible,
+.disclosure > summary:focus-visible { outline:2px solid #141210; outline-offset:-4px; box-shadow:0 0 0 2px #f0e2b6; }
+@media(max-width:760px) {
+  .app-artwork { grid-template-columns:1fr; gap:16px; max-width:440px; margin-top:32px; }
+  .explanation { padding:20px; }
+  .row, .disclosure > summary { grid-template-columns:32px minmax(0,1fr); gap:12px; }
+  .disclosure > summary { grid-template-columns:32px minmax(0,1fr) auto; }
+  .row__num { width:32px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *, *::before, *::after { animation:none !important; transition:none !important; }
+}
+@media(forced-colors:active) {
+  main h1:not(.sr-only), main h2 { background:none; color:CanvasText; -webkit-text-fill-color:CanvasText; text-shadow:none; }
+  .btn, .nav .cta, .menu-btn, .tile.row, details.disclosure { border:1px solid ButtonText; }
+  :focus-visible { outline:2px solid Highlight !important; }
+}

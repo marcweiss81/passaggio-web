@@ -1,0 +1,631 @@
+{
+  "inputs": {
+    "src/theme/oklch.ts": {
+      "bytes": 3543,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/theme/noir.ts": {
+      "bytes": 1216,
+      "imports": [
+        {
+          "path": "src/theme/oklch.ts",
+          "kind": "import-statement",
+          "original": "./oklch"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/theme/rgba.ts": {
+      "bytes": 230,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/theme/colors.ts": {
+      "bytes": 19982,
+      "imports": [
+        {
+          "path": "src/theme/noir.ts",
+          "kind": "import-statement",
+          "original": "./noir"
+        },
+        {
+          "path": "src/theme/rgba.ts",
+          "kind": "import-statement",
+          "original": "./rgba"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/theme/spacing.ts": {
+      "bytes": 1855,
+      "imports": [
+        {
+          "path": "react-native",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/warmups/readyCheckLayout.ts": {
+      "bytes": 1916,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/analysis/signalQuality.ts": {
+      "bytes": 7471,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/analysis/formantCorrection.ts": {
+      "bytes": 3220,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/analysis/pitchAware.ts": {
+      "bytes": 5499,
+      "imports": [
+        {
+          "path": "src/analysis/formantCorrection.ts",
+          "kind": "import-statement",
+          "original": "./formantCorrection"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/analysis/toneTypes.ts": {
+      "bytes": 8148,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/analysis/toneBaseline.ts": {
+      "bytes": 12623,
+      "imports": [
+        {
+          "path": "src/analysis/pitchAware.ts",
+          "kind": "import-statement",
+          "original": "./pitchAware"
+        },
+        {
+          "path": "src/analysis/toneTypes.ts",
+          "kind": "import-statement",
+          "original": "./toneTypes"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/analysis/soundMatch.ts": {
+      "bytes": 24985,
+      "imports": [
+        {
+          "path": "src/analysis/signalQuality.ts",
+          "kind": "import-statement",
+          "original": "./signalQuality"
+        },
+        {
+          "path": "src/analysis/signalQuality.ts",
+          "kind": "import-statement",
+          "original": "./signalQuality"
+        },
+        {
+          "path": "src/analysis/formantCorrection.ts",
+          "kind": "import-statement",
+          "original": "./formantCorrection"
+        },
+        {
+          "path": "src/analysis/pitchAware.ts",
+          "kind": "import-statement",
+          "original": "./pitchAware"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/analysis/toneQuality.ts": {
+      "bytes": 15398,
+      "imports": [
+        {
+          "path": "src/analysis/soundMatch.ts",
+          "kind": "import-statement",
+          "original": "./soundMatch"
+        },
+        {
+          "path": "src/analysis/toneBaseline.ts",
+          "kind": "import-statement",
+          "original": "./toneBaseline"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/domain/faults/pitchStats.ts": {
+      "bytes": 2927,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/analysis/onsetType.ts": {
+      "bytes": 6559,
+      "imports": [
+        {
+          "path": "src/analysis/toneBaseline.ts",
+          "kind": "import-statement",
+          "original": "./toneBaseline"
+        },
+        {
+          "path": "src/analysis/signalQuality.ts",
+          "kind": "import-statement",
+          "original": "./signalQuality"
+        },
+        {
+          "path": "src/domain/faults/pitchStats.ts",
+          "kind": "import-statement",
+          "original": "../domain/faults/pitchStats"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/analysis/resonance.ts": {
+      "bytes": 15852,
+      "imports": [
+        {
+          "path": "src/analysis/pitchAware.ts",
+          "kind": "import-statement",
+          "original": "./pitchAware"
+        },
+        {
+          "path": "src/analysis/toneBaseline.ts",
+          "kind": "import-statement",
+          "original": "./toneBaseline"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/domain/faults/types.ts": {
+      "bytes": 5261,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/domain/faults/cracks.ts": {
+      "bytes": 4855,
+      "imports": [
+        {
+          "path": "src/domain/faults/types.ts",
+          "kind": "import-statement",
+          "original": "./types"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/domain/praise.ts": {
+      "bytes": 4946,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/content/vowelFit.ts": {
+      "bytes": 4854,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/exercise/vowelFit.ts": {
+      "bytes": 4758,
+      "imports": [
+        {
+          "path": "src/domain/praise.ts",
+          "kind": "import-statement",
+          "original": "../domain/praise"
+        },
+        {
+          "path": "src/content/vowelFit.ts",
+          "kind": "import-statement",
+          "original": "../content/vowelFit"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/domain/registerContext.ts": {
+      "bytes": 2788,
+      "imports": [
+        {
+          "path": "src/analysis/resonance.ts",
+          "kind": "import-statement",
+          "original": "../analysis/resonance"
+        },
+        {
+          "path": "src/exercise/vowelFit.ts",
+          "kind": "import-statement",
+          "original": "../exercise/vowelFit"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/domain/registerStep.ts": {
+      "bytes": 4768,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/domain/voiceMap.ts": {
+      "bytes": 12983,
+      "imports": [
+        {
+          "path": "src/analysis/formantCorrection.ts",
+          "kind": "import-statement",
+          "original": "../analysis/formantCorrection"
+        },
+        {
+          "path": "src/analysis/pitchAware.ts",
+          "kind": "import-statement",
+          "original": "../analysis/pitchAware"
+        },
+        {
+          "path": "src/analysis/toneBaseline.ts",
+          "kind": "import-statement",
+          "original": "../analysis/toneBaseline"
+        },
+        {
+          "path": "src/analysis/resonance.ts",
+          "kind": "import-statement",
+          "original": "../analysis/resonance"
+        },
+        {
+          "path": "src/domain/faults/cracks.ts",
+          "kind": "import-statement",
+          "original": "./faults/cracks"
+        },
+        {
+          "path": "src/domain/faults/pitchStats.ts",
+          "kind": "import-statement",
+          "original": "./faults/pitchStats"
+        },
+        {
+          "path": "src/domain/registerContext.ts",
+          "kind": "import-statement",
+          "original": "./registerContext"
+        },
+        {
+          "path": "src/domain/registerStep.ts",
+          "kind": "import-statement",
+          "original": "./registerStep"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/warmups/mixSource.ts": {
+      "bytes": 2649,
+      "imports": [
+        {
+          "path": "src/analysis/signalQuality.ts",
+          "kind": "import-statement",
+          "original": "../../analysis/signalQuality"
+        },
+        {
+          "path": "src/analysis/pitchAware.ts",
+          "kind": "import-statement",
+          "original": "../../analysis/pitchAware"
+        },
+        {
+          "path": "src/analysis/resonance.ts",
+          "kind": "import-statement",
+          "original": "../../analysis/resonance"
+        },
+        {
+          "path": "src/analysis/toneBaseline.ts",
+          "kind": "import-statement",
+          "original": "../../analysis/toneBaseline"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/domain/feedback.ts": {
+      "bytes": 5009,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/content/soundMechanics.ts": {
+      "bytes": 6862,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/content/soundCorrections.ts": {
+      "bytes": 36793,
+      "imports": [
+        {
+          "path": "src/domain/feedback.ts",
+          "kind": "import-statement",
+          "original": "../domain/feedback"
+        },
+        {
+          "path": "src/content/soundMechanics.ts",
+          "kind": "import-statement",
+          "original": "./soundMechanics"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/content/corrections.ts": {
+      "bytes": 100010,
+      "imports": [
+        {
+          "path": "src/content/soundCorrections.ts",
+          "kind": "import-statement",
+          "original": "./soundCorrections"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/content/praise.ts": {
+      "bytes": 2764,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/domain/glossary.ts": {
+      "bytes": 3842,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/domain/style.ts": {
+      "bytes": 4548,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/domain/correctionLadder.ts": {
+      "bytes": 3381,
+      "imports": [
+        {
+          "path": "src/content/soundCorrections.ts",
+          "kind": "import-statement",
+          "original": "../content/soundCorrections"
+        },
+        {
+          "path": "src/domain/feedback.ts",
+          "kind": "import-statement",
+          "original": "./feedback"
+        },
+        {
+          "path": "src/domain/glossary.ts",
+          "kind": "import-statement",
+          "original": "./glossary"
+        },
+        {
+          "path": "src/domain/style.ts",
+          "kind": "import-statement",
+          "original": "./style"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/domain/faults/sectionReview.ts": {
+      "bytes": 9479,
+      "imports": [
+        {
+          "path": "src/domain/style.ts",
+          "kind": "import-statement",
+          "original": "../style"
+        },
+        {
+          "path": "src/domain/faults/types.ts",
+          "kind": "import-statement",
+          "original": "./types"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/domain/spokenFaults.ts": {
+      "bytes": 3542,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/domain/coach.ts": {
+      "bytes": 15006,
+      "imports": [
+        {
+          "path": "src/content/corrections.ts",
+          "kind": "import-statement",
+          "original": "../content/corrections"
+        },
+        {
+          "path": "src/content/praise.ts",
+          "kind": "import-statement",
+          "original": "../content/praise"
+        },
+        {
+          "path": "src/domain/correctionLadder.ts",
+          "kind": "import-statement",
+          "original": "./correctionLadder"
+        },
+        {
+          "path": "src/domain/faults/sectionReview.ts",
+          "kind": "import-statement",
+          "original": "./faults/sectionReview"
+        },
+        {
+          "path": "src/domain/spokenFaults.ts",
+          "kind": "import-statement",
+          "original": "./spokenFaults"
+        },
+        {
+          "path": "src/domain/praise.ts",
+          "kind": "import-statement",
+          "original": "./praise"
+        },
+        {
+          "path": "src/domain/style.ts",
+          "kind": "import-statement",
+          "original": "./style"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/warmups/strainWatch.ts": {
+      "bytes": 4359,
+      "imports": [
+        {
+          "path": "src/content/corrections.ts",
+          "kind": "import-statement",
+          "original": "../../content/corrections"
+        },
+        {
+          "path": "src/domain/coach.ts",
+          "kind": "import-statement",
+          "original": "../../domain/coach"
+        },
+        {
+          "path": "src/domain/correctionLadder.ts",
+          "kind": "import-statement",
+          "original": "../../domain/correctionLadder"
+        },
+        {
+          "path": "src/domain/style.ts",
+          "kind": "import-statement",
+          "original": "../../domain/style"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/warmups/readyCheck.ts": {
+      "bytes": 10879,
+      "imports": [
+        {
+          "path": "src/analysis/signalQuality.ts",
+          "kind": "import-statement",
+          "original": "../../analysis/signalQuality"
+        },
+        {
+          "path": "src/analysis/pitchAware.ts",
+          "kind": "import-statement",
+          "original": "../../analysis/pitchAware"
+        },
+        {
+          "path": "src/analysis/toneBaseline.ts",
+          "kind": "import-statement",
+          "original": "../../analysis/toneBaseline"
+        },
+        {
+          "path": "src/analysis/toneQuality.ts",
+          "kind": "import-statement",
+          "original": "../../analysis/toneQuality"
+        },
+        {
+          "path": "src/analysis/onsetType.ts",
+          "kind": "import-statement",
+          "original": "../../analysis/onsetType"
+        },
+        {
+          "path": "src/domain/voiceMap.ts",
+          "kind": "import-statement",
+          "original": "../../domain/voiceMap"
+        },
+        {
+          "path": "src/exercise/warmups/mixSource.ts",
+          "kind": "import-statement",
+          "original": "./mixSource"
+        },
+        {
+          "path": "src/exercise/warmups/strainWatch.ts",
+          "kind": "import-statement",
+          "original": "./strainWatch"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/warmups/ReadyCheckCanvas.tsx": {
+      "bytes": 3698,
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/theme/colors.ts",
+          "kind": "import-statement",
+          "original": "../../theme/colors"
+        },
+        {
+          "path": "src/theme/spacing.ts",
+          "kind": "import-statement",
+          "original": "../../theme/spacing"
+        },
+        {
+          "path": "src/exercise/warmups/readyCheckLayout.ts",
+          "kind": "import-statement",
+          "original": "./readyCheckLayout"
+        },
+        {
+          "path": "src/exercise/warmups/readyCheck.ts",
+          "kind": "import-statement",
+          "original": "./readyCheck"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "tmp/web-component-render/ready.cjs": {
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/exercise/warmups/ReadyCheckCanvas.tsx",
+      "inputs": {
+        "src/exercise/warmups/ReadyCheckCanvas.tsx": {
+          "bytesInOutput": 3401
+        },
+        "src/theme/oklch.ts": {
+          "bytesInOutput": 1881
+        },
+        "src/theme/noir.ts": {
+          "bytesInOutput": 335
+        },
+        "src/theme/rgba.ts": {
+          "bytesInOutput": 144
+        },
+        "src/theme/colors.ts": {
+          "bytesInOutput": 13018
+        },
+        "src/theme/spacing.ts": {
+          "bytesInOutput": 861
+        },
+        "src/exercise/warmups/readyCheckLayout.ts": {
+          "bytesInOutput": 925
+        },
+        "src/analysis/toneBaseline.ts": {
+          "bytesInOutput": 661
+        },
+        "src/domain/faults/types.ts": {
+          "bytesInOutput": 509
+        },
+        "src/content/vowelFit.ts": {
+          "bytesInOutput": 322
+        },
+        "src/content/soundCorrections.ts": {
+          "bytesInOutput": 29307
+        },
+        "src/content/corrections.ts": {
+          "bytesInOutput": 90654
+        },
+        "src/exercise/warmups/readyCheck.ts": {
+          "bytesInOutput": 115
+        }
+      },
+      "bytes": 143493
+    }
+  }
+}
