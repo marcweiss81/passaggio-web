@@ -16,11 +16,12 @@ description: An AI singing teacher for Android. It listens as you sing and tells
       <a class="btn btn--primary" href="/download.html">Get the Android app</a>
       <a class="btn secondary" href="/how-it-works.html">How it works</a>
     </div>
-    <div class="phones">
-      <figure class="phone phone--side"><img src="/assets/art/screen-home.webp" alt="Passaggio home screen with the gold logo and four practice icons" width="520" height="1005" loading="lazy" decoding="async"></figure>
-      <figure class="phone phone--centre"><img src="/assets/art/screen-lesson.webp" alt="A lesson running, with the pitch lane, live scores and pause button" width="520" height="1005" decoding="async"></figure>
-      <figure class="phone phone--side"><img src="/assets/art/screen-lesson-intro.webp" alt="A lesson introduction with its notes, tempo and start button" width="520" height="1005" loading="lazy" decoding="async"></figure>
+    <div class="app-artwork" aria-label="Lane and Ready Check graphics from the app">
+      <figure class="app-artwork__lane"><img src="/assets/art/lane-component.webp" alt="Production pitch lane component rendered with example ah notes, in a tall viewport" width="720" height="840" decoding="async"></figure>
+      <figure><img src="/assets/art/ready-onsets.webp" alt="Ready Check component render: three onset rings, with the first filled" width="720" height="336" decoding="async"></figure>
+      <figure><img src="/assets/art/ready-siren.webp" alt="Ready Check component render: pitch indicator crossing the highlighted bridge range" width="720" height="336" decoding="async"></figure>
     </div>
+    <p class="art-note"><small>Parts of the app, shown with example notes.</small></p>
   </div>
 </section>
 
@@ -69,37 +70,29 @@ description: An AI singing teacher for Android. It listens as you sing and tells
       <p class="lede">Sing along to scrolling note bars and watch your pitch in real time. When a habit recurs, a card shows the correction. Afterwards, Passaggio composes your next warm-up around what went wrong.</p>
     </div>
     <div class="demos">
-      <div class="demo demo-lesson" aria-label="Animation: a lesson interrupted by a correction">
+      <div class="demo explanation">
         <div class="demo-head"><span class="num">01 / While you sing</span><span>Live pitch · correction card</span></div>
-        <canvas height="230"></canvas>
-        <div class="demo-card" role="status">
+        <img class="guide-art" src="/assets/art/guide-yawn.webp" alt="In-app picture guide demonstrating a gentle yawn to create space" width="720" height="480" loading="lazy" decoding="async">
+        <p class="art-note"><small>One of the app's picture guides.</small></p>
+        <div class="explanation-card">
           <span class="fault">Straining</span>
           <h4>Open the back of your mouth, like the start of a yawn</h4>
           <p>That phrase was squeezed. Drop your jaw, let your mouth feel tall inside and keep the breath moving. A gentle lift is enough.</p>
           <div class="target">
-            <svg viewBox="0 0 64 38" aria-hidden="true">
-              <ellipse class="mouth" cx="32" cy="19" rx="18" ry="5" fill="rgba(245,204,88,0.18)" stroke="#f5cc58" stroke-width="2"/>
-              <path d="M14,8 Q32,2 50,8" fill="none" stroke="#c9ad7a" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
             <small>Not like this… like this.</small>
           </div>
         </div>
       </div>
-      <div class="demo demo-weak" aria-label="Animation: weak areas found and a lesson built">
+      <div class="demo explanation">
         <div class="demo-head"><span class="num">02 / After the lesson</span><span>Passaggio Ai Lessons</span></div>
-        <div class="map" data-phase="step">
-          <svg class="arc" viewBox="0 0 120 40" preserveAspectRatio="none" aria-hidden="true"><path d="M66,30 C72,4 96,4 102,30"/></svg>
-          <div class="keys" data-phase="note">
-            <i data-n="C4"></i><i data-n="D4"></i><i data-n="E4" class="weak"></i><i data-n="F4"></i><i data-n="G4" class="leap"></i><i data-n="A4" class="bridge"></i><i data-n="B4"></i><i data-n="C5" class="leap"></i><i data-n="D5"></i><i data-n="E5"></i><i data-n="F5"></i><i data-n="G5"></i>
-          </div>
-        </div>
         <ul class="findings">
           <li data-phase="note"><b>E4 lands flat</b> — 9 of the last 12 times <span class="tag">Weak note</span></li>
           <li data-phase="step"><b>G4 to C5</b> — falls short going up <span class="tag">Weak jump</span></li>
           <li data-phase="vowel"><b>"ee" slips above F4</b> — other vowels hold <span class="tag">Vowel</span></li>
           <li data-phase="fault" class="fault"><b>Sliding up into notes</b> — on most starts <span class="tag">Habit</span></li>
         </ul>
-        <div class="status" data-phase="listen"><span class="pulse"></span><span>Based on <span class="demo-count">1</span> lessons you've sung</span></div>
+        <p class="art-note"><small>An example of what Passaggio finds.</small></p>
+        <div class="status" data-phase="listen"><span>Based on <span class="demo-count">1</span> lessons you've sung</span></div>
         <div class="built-btn" data-phase="lesson">Lesson built: E4, the jump and the slide ✦</div>
       </div>
     </div>

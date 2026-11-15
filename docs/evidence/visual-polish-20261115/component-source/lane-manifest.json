@@ -1,0 +1,243 @@
+{
+  "classification": "Production NoteLaneCanvas children rendered with CanvasKit CPU and synthetic props; no full screen or installed APK parity claimed",
+  "commit": "cb64a3e17b3a580b57a187b941ff07eb95475f65",
+  "props": [
+    {
+      "width": 360,
+      "height": 420,
+      "playheadX": 110,
+      "pxPerMs": 0.1,
+      "notes": [
+        {
+          "id": "0",
+          "midi": 60,
+          "startMs": 0,
+          "durationMs": 800,
+          "syllable": "ah"
+        },
+        {
+          "id": "1",
+          "midi": 62,
+          "startMs": 900,
+          "durationMs": 800,
+          "syllable": "ah"
+        },
+        {
+          "id": "2",
+          "midi": 64,
+          "startMs": 1800,
+          "durationMs": 800,
+          "syllable": "ah"
+        },
+        {
+          "id": "3",
+          "midi": 65,
+          "startMs": 2700,
+          "durationMs": 800,
+          "syllable": "ah"
+        },
+        {
+          "id": "4",
+          "midi": 67,
+          "startMs": 3600,
+          "durationMs": 800,
+          "syllable": "ah"
+        }
+      ],
+      "displayTimeMs": {
+        "__fixture": true,
+        "value": 400
+      },
+      "head": {
+        "__fixture": true,
+        "value": null
+      },
+      "trailRing": {
+        "__fixture": true,
+        "value": {
+          "capacity": 1,
+          "times": [
+            0
+          ],
+          "midis": [
+            null
+          ],
+          "zones": [
+            0
+          ],
+          "targets": [
+            null
+          ],
+          "start": 0,
+          "count": 0
+        }
+      },
+      "visibleRange": {
+        "first": 0,
+        "end": 5
+      },
+      "pitchWindow": {
+        "span": {
+          "minMidi": 55,
+          "maxMidi": 72
+        },
+        "minMidi": {
+          "__fixture": true,
+          "value": 55
+        },
+        "maxMidi": {
+          "__fixture": true,
+          "value": 72
+        }
+      },
+      "hitStates": {},
+      "flames": null,
+      "lick": null,
+      "onPitchCents": 20,
+      "ignition": {
+        "bar": {
+          "__fixture": true,
+          "value": -1
+        },
+        "armed": false,
+        "fire": false
+      },
+      "skin": "classic",
+      "style": "classical"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "src/theme/oklch.ts",
+      "sha256": "4840b0e38b1998f781baaf35f14cc32edf15fcdff2533a8f9d3b789331655255"
+    },
+    {
+      "path": "src/theme/noir.ts",
+      "sha256": "f8eacc2c8376dd24e9eb26ef72a7fab3c9b4c08b2b4096c440fe2b0fd8918720"
+    },
+    {
+      "path": "src/theme/rgba.ts",
+      "sha256": "d5b2ceeba9e6c1be42bbf8820c6890c73261b9b379cf07b82993a0fc938e7b52"
+    },
+    {
+      "path": "src/theme/colors.ts",
+      "sha256": "8af5f704589ea8ed88924dff1a8ea3e7946817a58c25185c36eed0422b9d5b9e"
+    },
+    {
+      "path": "src/theme/typography.ts",
+      "sha256": "7e3b033bd4499905d6b87be5e2271796c42f56d76343838ac7383a3d09f7f88a"
+    },
+    {
+      "path": "src/exercise/trailRing.ts",
+      "sha256": "7403475342fe4d7e6c2722a6f571f6c0a01ee84100dad1d70c158e92d063c105"
+    },
+    {
+      "path": "src/exercise/layout.ts",
+      "sha256": "80cdd10dc1abef39044673e17979362bc10ac79b61644abe478f770d3f0828ce"
+    },
+    {
+      "path": "src/exercise/hud.ts",
+      "sha256": "fd334e045d8c66f4ef06d71ad370a7732ef7f2c9a9453f556f9b7f6535e7de70"
+    },
+    {
+      "path": "src/exercise/feedback/flameIgnition.ts",
+      "sha256": "fa915ce51b7fbee832699f3299d439c4ebc6bcf361ac55755b297084ed1f8bc9"
+    },
+    {
+      "path": "src/exercise/feedback/flameParticles.ts",
+      "sha256": "be75c7f682e9d391b8fa04186e1472bd904b2288a56bd2435ff3bbdf580f63a2"
+    },
+    {
+      "path": "src/exercise/feedback/flameShader.ts",
+      "sha256": "bcfc81422fa0ed1db1e6508036ac4ca02d32cada5596b922a2f4fbb25731db0f"
+    },
+    {
+      "path": "src/exercise/feedback/FlameBurst.tsx",
+      "sha256": "93b0987d1a077dd0246a298d7f7cb2326db548cb119f6d7a49f512d628eb65e6"
+    },
+    {
+      "path": "src/exercise/immersive/NextEntryMarker.tsx",
+      "sha256": "b6a9111ce1f29978249950264fcb9b2fc2c09525222610fe9a9392461ff091c1"
+    },
+    {
+      "path": "src/exercise/LaneGrid.tsx",
+      "sha256": "94502c38c7dae6cf5a457c2c8bc19fec9ef4cdd235219b8892d5340c789c3c50"
+    },
+    {
+      "path": "src/exercise/barClip.ts",
+      "sha256": "2588f8984e56a3b25f3a95d577e011b22ec8addd93177db194842056333e7f93"
+    },
+    {
+      "path": "src/exercise/useSmoothed.ts",
+      "sha256": "5a4fd63cd11b226aeb4d5f2d1d0bc558851bf34f2fa8ea11f8c5881ce5669188"
+    },
+    {
+      "path": "src/exercise/LitNote.tsx",
+      "sha256": "1aa36f83a4aa62603207e5e375d6d7e1ed263be8f734b5e72e2c0a69eed59ac5"
+    },
+    {
+      "path": "src/exercise/registerColors.ts",
+      "sha256": "7ba3c0084392e04681f5a534310a5a6edf187732508d40f86130fad4a26845a1"
+    },
+    {
+      "path": "src/exercise/syllableLabel.ts",
+      "sha256": "41b21696f1711f0a46bb343740b353338a6a1feb67ce6592f05c03add583a467"
+    },
+    {
+      "path": "src/exercise/NoteBar.tsx",
+      "sha256": "f38a1ee108613ac099fff9542ec622ea19ae90368ff1c778f6d77626a45057a4"
+    },
+    {
+      "path": "src/exercise/barLyrics.ts",
+      "sha256": "13d8f9cf13cd014f95724f3480a78d928cfeb12ef9a31759e73b8547c0752eeb"
+    },
+    {
+      "path": "src/theme/skinLooks.ts",
+      "sha256": "3ea22d5a5cbde76498f115901540a9d261473fc203ceff91393af74f65d2eba5"
+    },
+    {
+      "path": "src/exercise/skins/spriteAssets.ts",
+      "sha256": "95790dd340d069930d72ee13bc7f1d9124e00945da3a9ebe5576a374c51071e6"
+    },
+    {
+      "path": "src/exercise/skins/useSpriteImages.ts",
+      "sha256": "dccbee0e9e9a1068ca4cafd096a9670ff62f860a0b02060bbb160302da542c47"
+    },
+    {
+      "path": "src/exercise/skins/spriteSpec.ts",
+      "sha256": "f6200dee31c21e13f5ad31c8ada3fc3e0c9cf5122ae355dddd8ebf06845ae0e7"
+    },
+    {
+      "path": "src/exercise/skins/SpriteHead.tsx",
+      "sha256": "d191eb20640f921798ae32cef2bd4e920b2aaa3ceee3b7509e1bad45975d1aa5"
+    },
+    {
+      "path": "src/exercise/skins/pawShape.ts",
+      "sha256": "468d2f9d81bf5f7ebac0872b6f7a15fba58994c4cdba3f98d9501540042227d9"
+    },
+    {
+      "path": "src/exercise/skins/useSkinPulse.ts",
+      "sha256": "34a39ad498dad43644232a3fc164f7ab7d8f61d92f9cfd84b34a5904c399c97f"
+    },
+    {
+      "path": "src/exercise/skins/SkinTrail.tsx",
+      "sha256": "ec6e5a8247230d240ffa2fb3607e45590261cc07f1c52475147715604a01997c"
+    },
+    {
+      "path": "src/exercise/displayClock.ts",
+      "sha256": "187a94973b59d5dcaa1c10822abe291af3350e9aa14150c10bd84719dd769339"
+    },
+    {
+      "path": "src/exercise/trailPath.ts",
+      "sha256": "1fc082ddf7abd8fbdc35552feb55b541b24eb09a8d2c9ac07831cf255065c5c8"
+    },
+    {
+      "path": "src/exercise/VoiceTrail.tsx",
+      "sha256": "613e3287ece1d8535b464018cb0d51f38f52730a1aece16f5a60e454a2673553"
+    },
+    {
+      "path": "src/exercise/NoteLaneCanvas.tsx",
+      "sha256": "74f99c329f93221dbd6f69fb891dc70061d4986bfb72081459eae55e25807108"
+    }
+  ]
+}

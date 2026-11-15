@@ -1,0 +1,386 @@
+[
+  {
+    "name": "index",
+    "width": 360,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 1
+  },
+  {
+    "name": "index",
+    "width": 360,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 1
+  },
+  {
+    "name": "index",
+    "width": 412,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 1
+  },
+  {
+    "name": "index",
+    "width": 412,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 1
+  },
+  {
+    "name": "index",
+    "width": 1440,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 1
+  },
+  {
+    "name": "index",
+    "width": 1440,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 1
+  },
+  {
+    "name": "features",
+    "width": 360,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "features",
+    "width": 360,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "features",
+    "width": 412,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "features",
+    "width": 412,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "features",
+    "width": 1440,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "features",
+    "width": 1440,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "lessons",
+    "width": 360,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "lessons",
+    "width": 360,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "lessons",
+    "width": 412,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "lessons",
+    "width": 412,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "lessons",
+    "width": 1440,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "lessons",
+    "width": 1440,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "how-it-works",
+    "width": 360,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "how-it-works",
+    "width": 360,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "how-it-works",
+    "width": 412,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "how-it-works",
+    "width": 412,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "how-it-works",
+    "width": 1440,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "how-it-works",
+    "width": 1440,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "faq",
+    "width": 360,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "faq",
+    "width": 360,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "faq",
+    "width": 412,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "faq",
+    "width": 412,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "faq",
+    "width": 1440,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "faq",
+    "width": 1440,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "download",
+    "width": 360,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "download",
+    "width": 360,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "download",
+    "width": 412,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "download",
+    "width": 412,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "download",
+    "width": 1440,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "download",
+    "width": 1440,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "privacy",
+    "width": 360,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "privacy",
+    "width": 360,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "privacy",
+    "width": 412,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "privacy",
+    "width": 412,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "privacy",
+    "width": 1440,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "privacy",
+    "width": 1440,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "404",
+    "width": 360,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "404",
+    "width": 360,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "404",
+    "width": 412,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "404",
+    "width": 412,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "404",
+    "width": 1440,
+    "scale": 1,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  },
+  {
+    "name": "404",
+    "width": 1440,
+    "scale": 2,
+    "overflow": false,
+    "brokenImages": [],
+    "motion": 0
+  }
+]

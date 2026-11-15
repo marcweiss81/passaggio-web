@@ -1,0 +1,2410 @@
+{
+  "inputs": {
+    "src/theme/oklch.ts": {
+      "bytes": 3543,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/theme/noir.ts": {
+      "bytes": 1216,
+      "imports": [
+        {
+          "path": "src/theme/oklch.ts",
+          "kind": "import-statement",
+          "original": "./oklch"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/theme/rgba.ts": {
+      "bytes": 230,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/theme/colors.ts": {
+      "bytes": 19982,
+      "imports": [
+        {
+          "path": "src/theme/noir.ts",
+          "kind": "import-statement",
+          "original": "./noir"
+        },
+        {
+          "path": "src/theme/rgba.ts",
+          "kind": "import-statement",
+          "original": "./rgba"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/theme/typography.ts": {
+      "bytes": 6118,
+      "imports": [
+        {
+          "path": "src/theme/colors.ts",
+          "kind": "import-statement",
+          "original": "./colors"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/trailRing.ts": {
+      "bytes": 2492,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/exercise/layout.ts": {
+      "bytes": 9291,
+      "imports": [
+        {
+          "path": "src/exercise/trailRing.ts",
+          "kind": "import-statement",
+          "original": "./trailRing"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/hud.ts": {
+      "bytes": 4571,
+      "imports": [
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "./layout"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/feedback/flameIgnition.ts": {
+      "bytes": 10262,
+      "imports": [
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "../layout"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/feedback/flameParticles.ts": {
+      "bytes": 9430,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/exercise/feedback/flameShader.ts": {
+      "bytes": 11025,
+      "imports": [
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "../layout"
+        },
+        {
+          "path": "src/exercise/feedback/flameParticles.ts",
+          "kind": "import-statement",
+          "original": "./flameParticles"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/feedback/FlameBurst.tsx": {
+      "bytes": 17207,
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/theme/colors.ts",
+          "kind": "import-statement",
+          "original": "../../theme/colors"
+        },
+        {
+          "path": "src/exercise/hud.ts",
+          "kind": "import-statement",
+          "original": "../hud"
+        },
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "../layout"
+        },
+        {
+          "path": "src/exercise/trailRing.ts",
+          "kind": "import-statement",
+          "original": "../trailRing"
+        },
+        {
+          "path": "src/exercise/feedback/flameIgnition.ts",
+          "kind": "import-statement",
+          "original": "./flameIgnition"
+        },
+        {
+          "path": "src/exercise/feedback/flameParticles.ts",
+          "kind": "import-statement",
+          "original": "./flameParticles"
+        },
+        {
+          "path": "src/exercise/feedback/flameShader.ts",
+          "kind": "import-statement",
+          "original": "./flameShader"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/immersive/NextEntryMarker.tsx": {
+      "bytes": 2677,
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/theme/colors.ts",
+          "kind": "import-statement",
+          "original": "../../theme/colors"
+        },
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "../layout"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/LaneGrid.tsx": {
+      "bytes": 8741,
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/theme/colors.ts",
+          "kind": "import-statement",
+          "original": "../theme/colors"
+        },
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "./layout"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/barClip.ts": {
+      "bytes": 2474,
+      "imports": [
+        {
+          "path": "src/exercise/hud.ts",
+          "kind": "import-statement",
+          "original": "./hud"
+        },
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "./layout"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/useSmoothed.ts": {
+      "bytes": 1185,
+      "imports": [
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/exercise/hud.ts",
+          "kind": "import-statement",
+          "original": "./hud"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/LitNote.tsx": {
+      "bytes": 8707,
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/theme/colors.ts",
+          "kind": "import-statement",
+          "original": "../theme/colors"
+        },
+        {
+          "path": "src/exercise/barClip.ts",
+          "kind": "import-statement",
+          "original": "./barClip"
+        },
+        {
+          "path": "src/exercise/hud.ts",
+          "kind": "import-statement",
+          "original": "./hud"
+        },
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "./layout"
+        },
+        {
+          "path": "src/exercise/trailRing.ts",
+          "kind": "import-statement",
+          "original": "./trailRing"
+        },
+        {
+          "path": "src/exercise/useSmoothed.ts",
+          "kind": "import-statement",
+          "original": "./useSmoothed"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/registerColors.ts": {
+      "bytes": 8921,
+      "imports": [
+        {
+          "path": "src/theme/colors.ts",
+          "kind": "import-statement",
+          "original": "../theme/colors"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/syllableLabel.ts": {
+      "bytes": 5036,
+      "imports": [
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "./layout"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/NoteBar.tsx": {
+      "bytes": 7057,
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/theme/colors.ts",
+          "kind": "import-statement",
+          "original": "../theme/colors"
+        },
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "./layout"
+        },
+        {
+          "path": "src/exercise/registerColors.ts",
+          "kind": "import-statement",
+          "original": "./registerColors"
+        },
+        {
+          "path": "src/exercise/syllableLabel.ts",
+          "kind": "import-statement",
+          "original": "./syllableLabel"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/barLyrics.ts": {
+      "bytes": 4505,
+      "imports": [
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "./layout"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/theme/skinLooks.ts": {
+      "bytes": 9486,
+      "imports": [
+        {
+          "path": "src/theme/rgba.ts",
+          "kind": "import-statement",
+          "original": "./rgba"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/skins/spriteAssets.ts": {
+      "bytes": 11082,
+      "imports": [
+        {
+          "path": "../../../assets/skins/heads/dice.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/drumstick.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/saber.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/flamecone.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/wave.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/sparks.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/spark.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/mirrorball.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/chandelier.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/torpedo.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/phone.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/tennisball.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/orb-original.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/orb-aurora.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/orb-gold.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-7.png",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/skins/useSpriteImages.ts": {
+      "bytes": 2200,
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/exercise/skins/spriteAssets.ts",
+          "kind": "import-statement",
+          "original": "./spriteAssets"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/skins/spriteSpec.ts": {
+      "bytes": 11749,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/exercise/skins/SpriteHead.tsx": {
+      "bytes": 4434,
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/exercise/skins/useSpriteImages.ts",
+          "kind": "import-statement",
+          "original": "./useSpriteImages"
+        },
+        {
+          "path": "src/exercise/skins/spriteSpec.ts",
+          "kind": "import-statement",
+          "original": "./spriteSpec"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/skins/pawShape.ts": {
+      "bytes": 3591,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/exercise/skins/useSkinPulse.ts": {
+      "bytes": 803,
+      "imports": [
+        {
+          "path": "react-native-reanimated",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/skins/SkinTrail.tsx": {
+      "bytes": 6945,
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/theme/skinLooks.ts",
+          "kind": "import-statement",
+          "original": "../../theme/skinLooks"
+        },
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "../layout"
+        },
+        {
+          "path": "src/exercise/skins/pawShape.ts",
+          "kind": "import-statement",
+          "original": "./pawShape"
+        },
+        {
+          "path": "src/exercise/skins/useSkinPulse.ts",
+          "kind": "import-statement",
+          "original": "./useSkinPulse"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/displayClock.ts": {
+      "bytes": 1655,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/exercise/trailPath.ts": {
+      "bytes": 7117,
+      "imports": [
+        {
+          "path": "src/exercise/displayClock.ts",
+          "kind": "import-statement",
+          "original": "./displayClock"
+        },
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "./layout"
+        },
+        {
+          "path": "src/exercise/trailRing.ts",
+          "kind": "import-statement",
+          "original": "./trailRing"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/VoiceTrail.tsx": {
+      "bytes": 7716,
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/theme/colors.ts",
+          "kind": "import-statement",
+          "original": "../theme/colors"
+        },
+        {
+          "path": "src/theme/skinLooks.ts",
+          "kind": "import-statement",
+          "original": "../theme/skinLooks"
+        },
+        {
+          "path": "src/exercise/skins/SpriteHead.tsx",
+          "kind": "import-statement",
+          "original": "./skins/SpriteHead"
+        },
+        {
+          "path": "src/exercise/skins/SkinTrail.tsx",
+          "kind": "import-statement",
+          "original": "./skins/SkinTrail"
+        },
+        {
+          "path": "src/exercise/layout.ts",
+          "kind": "import-statement",
+          "original": "./layout"
+        },
+        {
+          "path": "src/exercise/trailPath.ts",
+          "kind": "import-statement",
+          "original": "./trailPath"
+        },
+        {
+          "path": "src/exercise/trailRing.ts",
+          "kind": "import-statement",
+          "original": "./trailRing"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/exercise/NoteLaneCanvas.tsx": {
+      "bytes": 11291,
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/theme/colors.ts",
+          "kind": "import-statement",
+          "original": "../theme/colors"
+        },
+        {
+          "path": "src/theme/typography.ts",
+          "kind": "import-statement",
+          "original": "../theme/typography"
+        },
+        {
+          "path": "src/exercise/feedback/FlameBurst.tsx",
+          "kind": "import-statement",
+          "original": "./feedback/FlameBurst"
+        },
+        {
+          "path": "src/exercise/immersive/NextEntryMarker.tsx",
+          "kind": "import-statement",
+          "original": "./immersive/NextEntryMarker"
+        },
+        {
+          "path": "src/exercise/LaneGrid.tsx",
+          "kind": "import-statement",
+          "original": "./LaneGrid"
+        },
+        {
+          "path": "src/exercise/LitNote.tsx",
+          "kind": "import-statement",
+          "original": "./LitNote"
+        },
+        {
+          "path": "src/exercise/NoteBar.tsx",
+          "kind": "import-statement",
+          "original": "./NoteBar"
+        },
+        {
+          "path": "src/exercise/barLyrics.ts",
+          "kind": "import-statement",
+          "original": "./barLyrics"
+        },
+        {
+          "path": "src/exercise/syllableLabel.ts",
+          "kind": "import-statement",
+          "original": "./syllableLabel"
+        },
+        {
+          "path": "src/exercise/VoiceTrail.tsx",
+          "kind": "import-statement",
+          "original": "./VoiceTrail"
+        },
+        {
+          "path": "src/exercise/registerColors.ts",
+          "kind": "import-statement",
+          "original": "./registerColors"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "tmp/web-component-render/lane.cjs": {
+      "imports": [
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/dice.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/drumstick.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/saber.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/flamecone.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/wave.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/sparks.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/spark.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/mirrorball.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/chandelier.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/torpedo.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/phone.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/tennisball.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/orb-original.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/orb-aurora.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/orb-gold.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/dice-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/drumstick-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/saber-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/flamecone-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/wave-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/sparks-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/spark-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/mirrorball-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/chandelier-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/torpedo-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/phone-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/tennisball-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-original-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-aurora-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-0.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-1.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-2.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-3.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-4.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-5.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-6.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "../../../assets/skins/heads/frames/orb-gold-7.png",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@shopify/react-native-skia",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-native-reanimated",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/exercise/NoteLaneCanvas.tsx",
+      "inputs": {
+        "src/exercise/NoteLaneCanvas.tsx": {
+          "bytesInOutput": 7755
+        },
+        "src/theme/oklch.ts": {
+          "bytesInOutput": 1887
+        },
+        "src/theme/noir.ts": {
+          "bytesInOutput": 335
+        },
+        "src/theme/rgba.ts": {
+          "bytesInOutput": 144
+        },
+        "src/theme/colors.ts": {
+          "bytesInOutput": 13018
+        },
+        "src/theme/typography.ts": {
+          "bytesInOutput": 4477
+        },
+        "src/exercise/feedback/FlameBurst.tsx": {
+          "bytesInOutput": 12773
+        },
+        "src/exercise/trailRing.ts": {
+          "bytesInOutput": 150
+        },
+        "src/exercise/layout.ts": {
+          "bytesInOutput": 1704
+        },
+        "src/exercise/hud.ts": {
+          "bytesInOutput": 1210
+        },
+        "src/exercise/feedback/flameIgnition.ts": {
+          "bytesInOutput": 3838
+        },
+        "src/exercise/feedback/flameParticles.ts": {
+          "bytesInOutput": 4567
+        },
+        "src/exercise/feedback/flameShader.ts": {
+          "bytesInOutput": 5858
+        },
+        "src/exercise/immersive/NextEntryMarker.tsx": {
+          "bytesInOutput": 1270
+        },
+        "src/exercise/LaneGrid.tsx": {
+          "bytesInOutput": 8121
+        },
+        "src/exercise/LitNote.tsx": {
+          "bytesInOutput": 6789
+        },
+        "src/exercise/barClip.ts": {
+          "bytesInOutput": 358
+        },
+        "src/exercise/useSmoothed.ts": {
+          "bytesInOutput": 667
+        },
+        "src/exercise/NoteBar.tsx": {
+          "bytesInOutput": 5067
+        },
+        "src/exercise/registerColors.ts": {
+          "bytesInOutput": 3830
+        },
+        "src/exercise/syllableLabel.ts": {
+          "bytesInOutput": 2448
+        },
+        "src/exercise/barLyrics.ts": {
+          "bytesInOutput": 2072
+        },
+        "src/exercise/VoiceTrail.tsx": {
+          "bytesInOutput": 6441
+        },
+        "src/theme/skinLooks.ts": {
+          "bytesInOutput": 6990
+        },
+        "src/exercise/skins/SpriteHead.tsx": {
+          "bytesInOutput": 3761
+        },
+        "src/exercise/skins/useSpriteImages.ts": {
+          "bytesInOutput": 1606
+        },
+        "src/exercise/skins/spriteAssets.ts": {
+          "bytesInOutput": 9165
+        },
+        "src/exercise/skins/spriteSpec.ts": {
+          "bytesInOutput": 6909
+        },
+        "src/exercise/skins/SkinTrail.tsx": {
+          "bytesInOutput": 5724
+        },
+        "src/exercise/skins/pawShape.ts": {
+          "bytesInOutput": 2118
+        },
+        "src/exercise/skins/useSkinPulse.ts": {
+          "bytesInOutput": 474
+        },
+        "src/exercise/displayClock.ts": {
+          "bytesInOutput": 66
+        },
+        "src/exercise/trailPath.ts": {
+          "bytesInOutput": 3723
+        }
+      },
+      "bytes": 137618
+    }
+  }
+}

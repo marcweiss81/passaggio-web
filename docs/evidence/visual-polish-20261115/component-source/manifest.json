@@ -1,0 +1,186 @@
+{
+  "classification": "Production ReadyCheckCanvas children rendered with CanvasKit CPU and synthetic props; no full screen or installed APK parity claimed",
+  "commit": "cb64a3e17b3a580b57a187b941ff07eb95475f65",
+  "props": [
+    {
+      "phase": "onsets",
+      "progress": 0.1,
+      "onsetsHeard": 1,
+      "liveMidi": null,
+      "bridge": null,
+      "range": null
+    },
+    {
+      "phase": "siren",
+      "progress": 0.5,
+      "onsetsHeard": 3,
+      "liveMidi": 66,
+      "bridge": {
+        "lowMidi": 62,
+        "highMidi": 67
+      },
+      "range": {
+        "lowestMidi": 48,
+        "highestMidi": 79
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "path": "src/theme/oklch.ts",
+      "sha256": "4840b0e38b1998f781baaf35f14cc32edf15fcdff2533a8f9d3b789331655255"
+    },
+    {
+      "path": "src/theme/noir.ts",
+      "sha256": "f8eacc2c8376dd24e9eb26ef72a7fab3c9b4c08b2b4096c440fe2b0fd8918720"
+    },
+    {
+      "path": "src/theme/rgba.ts",
+      "sha256": "d5b2ceeba9e6c1be42bbf8820c6890c73261b9b379cf07b82993a0fc938e7b52"
+    },
+    {
+      "path": "src/theme/colors.ts",
+      "sha256": "8af5f704589ea8ed88924dff1a8ea3e7946817a58c25185c36eed0422b9d5b9e"
+    },
+    {
+      "path": "src/theme/spacing.ts",
+      "sha256": "e0a6e24175b2f0e7673f6a2d8ff5015ae36cfd32e6f9126752bb8d49afe0c0a3"
+    },
+    {
+      "path": "src/exercise/warmups/readyCheckLayout.ts",
+      "sha256": "53ae9dc7caa0b899e7fe27119396547543eb0867c3caa7724098bfdf59444714"
+    },
+    {
+      "path": "src/analysis/signalQuality.ts",
+      "sha256": "72e61f7d6ebac497b071c5dea2d199ce15639d2a775153f6c28ca314224b59ac"
+    },
+    {
+      "path": "src/analysis/formantCorrection.ts",
+      "sha256": "70825992cdf92d2fe529f41800bf80f82b5810dfc75037e03b501f59ba927f0d"
+    },
+    {
+      "path": "src/analysis/pitchAware.ts",
+      "sha256": "46f07a29e8c79153c392c76d5af61f6a4548c110f3fc4993e31770f31bd696a4"
+    },
+    {
+      "path": "src/analysis/toneTypes.ts",
+      "sha256": "e6a897acdeef5c7dc1d2e48710c0657d906bf44752cb51d2545584de29554157"
+    },
+    {
+      "path": "src/analysis/toneBaseline.ts",
+      "sha256": "db06bdb0a303b5d1f8e5a70b0fb3524876084f3f7cf66a6ac77358f48f8b858a"
+    },
+    {
+      "path": "src/analysis/soundMatch.ts",
+      "sha256": "6835e7d52bb3ba90e338230df1efc0130f3aade0a48ef7f2eaa34c21abebd317"
+    },
+    {
+      "path": "src/analysis/toneQuality.ts",
+      "sha256": "ab62c599a769d3280f083187e7ad954b86e1c21cf4116cae707e3fbb267d9e31"
+    },
+    {
+      "path": "src/domain/faults/pitchStats.ts",
+      "sha256": "49a1c6b86c60a736a31cf8619a5e7606d7022e802bcb87cbbcd040be101895aa"
+    },
+    {
+      "path": "src/analysis/onsetType.ts",
+      "sha256": "48123c619d95b198be24d62df5466962e8e0efc712796e0756d3ddcb65c5686f"
+    },
+    {
+      "path": "src/analysis/resonance.ts",
+      "sha256": "f72857b78d067432958e73f9672a8d8438782bc9cc4fff4f04f1a70de4dac90a"
+    },
+    {
+      "path": "src/domain/faults/types.ts",
+      "sha256": "3cbf5cb675526cac8629599fefc44eacc508ad4080b1fb90542a9133e9c34b1e"
+    },
+    {
+      "path": "src/domain/faults/cracks.ts",
+      "sha256": "be6ff3dba41c7fbbc581f55d9f433729c98db372bb3fb9f5563e0e852cc37768"
+    },
+    {
+      "path": "src/domain/praise.ts",
+      "sha256": "355cc372e548bda1453e627ebabe24fa84e2840383269a5e948dfe4b86d7d34c"
+    },
+    {
+      "path": "src/content/vowelFit.ts",
+      "sha256": "0c8d805bf858d90f21f3ea1abc3d5bf181409bd2b84248d0d545031d88d7e069"
+    },
+    {
+      "path": "src/exercise/vowelFit.ts",
+      "sha256": "76371257b7136afb872d5d3c5ce9bd12632851582a1599933de93f42ddafed94"
+    },
+    {
+      "path": "src/domain/registerContext.ts",
+      "sha256": "4cc0ab84538b8883366355653e2ff791bf16e64bdccdb8feefec2dd7ba954899"
+    },
+    {
+      "path": "src/domain/registerStep.ts",
+      "sha256": "015f59c4ab852e20615f635a1cc80578be233e723480d93eefe001cb9644a023"
+    },
+    {
+      "path": "src/domain/voiceMap.ts",
+      "sha256": "4c1556815ca902e3e889957366fda1aafbb58a744e7e0345a9fb9cd55ee6a6b8"
+    },
+    {
+      "path": "src/exercise/warmups/mixSource.ts",
+      "sha256": "99f10dc046c4984f3ed65c6ba96ff6fd370e3cab5a84379e553503f25d8776e3"
+    },
+    {
+      "path": "src/domain/feedback.ts",
+      "sha256": "fe67df2c826eb255c397c31cde98e0ca1bbda8093987f386e0214d64cb944c4e"
+    },
+    {
+      "path": "src/content/soundMechanics.ts",
+      "sha256": "bc325b6a5fe00638b9b032257d44e52f4ed0b195cbfbc7196388a67b4a12271b"
+    },
+    {
+      "path": "src/content/soundCorrections.ts",
+      "sha256": "7a734676dc800e2c2584ea1dc1990219b0c56607296a28eabd963a2f336e9023"
+    },
+    {
+      "path": "src/content/corrections.ts",
+      "sha256": "8226831585846ca0ff041e42ccbc8dcf33bf3d1f86148cdc48c5329779cadb7d"
+    },
+    {
+      "path": "src/content/praise.ts",
+      "sha256": "ca49612354507ed80b970f044095ac8f4e4c9f34b53cbadcc3024facc006d95c"
+    },
+    {
+      "path": "src/domain/glossary.ts",
+      "sha256": "410289b0df137f932d1be1ea380fc7c5162ea3d8295e536e9e217d5395b3c447"
+    },
+    {
+      "path": "src/domain/style.ts",
+      "sha256": "bbe214fda2c5820b02736e06caf490427be5a8015398f8eadb7a80a911996eef"
+    },
+    {
+      "path": "src/domain/correctionLadder.ts",
+      "sha256": "12c93da1bd97614f8802329449223c4bbefbc61456e0680a873e02abc3a253c2"
+    },
+    {
+      "path": "src/domain/faults/sectionReview.ts",
+      "sha256": "737ddea8e978eedf665e163b76a61216a40d21cc6169fae31819ea0bd5d96427"
+    },
+    {
+      "path": "src/domain/spokenFaults.ts",
+      "sha256": "2abc0abdcf69e2953be7d18f7c42c999a93ade1be5842584f4ca32a71b3b18a6"
+    },
+    {
+      "path": "src/domain/coach.ts",
+      "sha256": "eb83f18839dc955171e5d89ad5725f9753a5e80cc70c84accf7a204e4ff7464a"
+    },
+    {
+      "path": "src/exercise/warmups/strainWatch.ts",
+      "sha256": "8f89b46bde400b0e0b5abfffdbbd2d3812b0ff21525f3e61e948630da21e3712"
+    },
+    {
+      "path": "src/exercise/warmups/readyCheck.ts",
+      "sha256": "167eb62da2f018a065f0c0d114823c6c32ee4b14f5914c0fa19889e6531409d2"
+    },
+    {
+      "path": "src/exercise/warmups/ReadyCheckCanvas.tsx",
+      "sha256": "93d7eb452a8b1f5690439f192f3885a8b4d09c4ba0f542bf216532a572ecf681"
+    }
+  ]
+}
